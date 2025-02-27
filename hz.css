@@ -1,0 +1,2320 @@
+/* Styles for EPWF/HCDE iFrames */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 0px;
+
+}
+
+* {
+    margin: none !important;
+}
+
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+#Review-conf-indicator.completed-step1:before {
+	content: " ";
+	border-bottom: 21px solid transparent;
+	border-left: 20px solid var(--color-bg);
+	border-top: 21px solid transparent;
+	height: 0;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 0;
+}
+
+@font-face {
+    font-family: "HelveticaNeue-Thin";
+    src: url("../fontawesome/fonts/ctl-consumer/HelveticaNeue-Thin.ttf");
+    font-family: "HelveticaNeue-light";
+    src: url("../fontawesome/fonts/ctl-consumer/HelveticaNeue-Light.ttf");
+    font-family: "HelveticaNeue-medium";
+    src: url("../fontawesome/fonts/ctl-consumer/HelveticaNeue-Medium.ttf");
+    font-family: "HelveticaNeue-default";
+    src: url("../fontawesome/fonts/ctl-consumer/HelveticaNeue.ttf");
+    font-family: "HelveticaNeue-bold";
+    src: url("../fontawesome/fonts/ctl-consumer/HelveticaNeue-Bold.ttf");
+}
+
+body .loading-spinner-text {
+    color: #666;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+body {
+    font-family: HelveticaNeue-light, Arial, sans-serif;
+}
+
+
+/* ------------------------------------------- */
+
+
+/*               Step indicators               */
+
+
+/* ------------------------------------------- */
+
+#Menu-wrapper {
+    margin-bottom: 15px;
+}
+
+
+
+#Menu-wrapper .indicators-font-style {
+    font-size: 14px;
+}
+
+#Menu-wrapper .icon-one-inprogress,
+#Menu-wrapper .icon-one-completed,
+#Menu-wrapper .icon-two-initiate,
+#Menu-wrapper .icon-two-inprogress,
+#Menu-wrapper .icon-three-initiate {
+    display: inline-block;
+    float: none;
+    /* margin: 0 0 0 20px; */
+}
+
+
+#Menu-wrapper .icon-two-initiate {
+    background-position: -86px -151px;
+    margin-top: -12px;
+}
+
+#Menu-wrapper .icon-two-inprogress {
+    background-position: -82px -216px;
+    height: 33px;
+        margin-top: -13px;
+}
+
+#Menu-wrapper .initiate-step,
+#Menu-wrapper .inprogress-step,
+#Menu-wrapper .completed-step,
+#Menu-wrapper .completed-step1 {
+    /* padding: 3px 0 0; */
+    width: 30%;
+    margin-right: 5%;
+}
+
+#Menu-wrapper .initiate-step:last-child,
+#Menu-wrapper .inprogress-step:last-child {
+    margin-right: 0;
+}
+
+
+
+#Menu-wrapper .indicators-font-style.desktop-block-only {
+    display: none;
+}
+
+
+/* progress steps for PayBill Cris */
+
+#Menu-wrapper .icon-one-completed {
+    background-position: -31px -209px;
+    margin-top: -20px;
+}
+#Menu-wrapper .icon-one-inprogress{
+    background-position: -28px -151px;
+}
+#Menu-wrapper .icon-three-initiate{
+    background-position: -130px -151px;
+}
+#Menu-wrapper .icon-two-completed {
+    background-position: -133px -213px;
+  }
+  #Menu-wrapper{
+    display: flex;
+}
+
+
+
+
+/* ------------------------------------------- */
+
+
+/*              Error Messaging                */
+
+
+/* ------------------------------------------- */
+
+#paymentForm .error-display-box {
+    margin: 0 10px 15px;
+    padding: 12px;
+}
+
+#paymentForm .error-display-box label {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#paymentForm .error-display-box span {
+    font-size: 14px;
+}
+
+
+
+
+/* ------------------------------------------- */
+
+
+/*                   Buttons                   */
+
+
+/* ------------------------------------------- */
+
+body .button-style,
+body .desktop-link-mobile-button {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    background: var(--primary-blue);
+
+	-webkit-appearance: none;
+}
+
+body .desktop-link-mobile-button {
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #DEDDDD), color-stop(1, #9C9C9C));
+    /* Chrome 1-9 and Safari 4-5 */
+    /* @alternate */
+    background: -moz-linear-gradient( center top, #DEDDDD 5%, #9C9C9C 100%);
+    /* Mozilla 16 and lower */
+    /* @alternate */
+    background: -ms-linear-gradient(top, #DEDDDD, #9C9C9C);
+    /*IE9+ */
+    /* @alternate */
+    background: -webkit-linear-gradient(top, #DEDDDD, #9C9C9C);
+    /* Chrome 10+ and Safari 5.1 */
+    /* @alternate */
+    background: -o-linear-gradient(top, #DEDDDD, #9C9C9C);
+    /* Opera 11 and lower */
+}
+
+
+
+@media (max-width: 656px) {
+    .desktop-link-mobile-button {
+        position: relative;
+        display: inline-block;
+        zoom: 1;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+1,cccccc+100;Gren+3D */
+        background: #eeeeee;
+        /* Old browsers */
+        background: -moz-linear-gradient(top, #eeeeee 1%, #cccccc 100%);
+        /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #eeeeee), color-stop(100%, #cccccc));
+        /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, #eeeeee 1%, #cccccc 100%);
+        /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, #eeeeee 1%, #cccccc 100%);
+        /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, #eeeeee 1%, #cccccc 100%);
+        /* IE10+ */
+        background: linear-gradient(to bottom, #eeeeee 1%, #cccccc 100%);
+        /* W3C */
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc', GradientType=0);
+        /* IE6-9 */
+        text-shadow: none;
+        border-radius: 3px;
+        border-bottom-left-radius: 3px;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        -webkit-border-radius: 3px 3px 3px 3px;
+        -moz-border-radius: 3px 3px 3px 3px;
+        border: 0px solid #000;
+        text-indent: 0;
+        color: #ffffff;
+        font-family: HelveticaNeue-light, Arial;
+        font-size: 14px;
+        font-weight: bold;
+        font-style: normal;
+        text-decoration: none;
+        text-align: center;
+        padding: 6px 0px;
+        -webkit-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+        -moz-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+        box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+        vertical-align: middle;
+        cursor: pointer;
+        z-index: 1;
+        behavior: url(/static/js/PIE.htc);
+        min-width: 80px;
+    }
+}
+
+#ValidatePaymentInfoDiv {
+    text-align: center;
+}
+
+
+/* ------------------------------------------- */
+
+
+/*                    Forms                    */
+
+
+/* ------------------------------------------- */
+
+
+/* Inputs */
+
+#paymentForm .PaymentInformationPart select,
+#paymentForm .PaymentInformationPart input[type="text"],
+#paymentForm .PaymentInformationPart input[type="tel"],
+#paymentForm .PaymentInformationPart input[type="date"] {
+    border: 1px solid #aaa;
+    background: transparent;
+    font-size: 20px;
+    height: 35px;
+    margin: 0 0 15px;
+    padding: 1px 5px;
+    width: 100%;
+}
+
+
+
+
+/* Labels */
+
+#paymentForm label {
+    /*color: #666;*/
+    display: inline-block;
+    /*font-size: 14px;*/
+    /*font-weight: 700;*/
+    margin-bottom: 7px;
+}
+
+
+
+#paymentForm .default-check-label,
+#TermsAndConDiv label,
+#TermsAndConDiv a {
+    display: inline;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#paymentForm .show-payment-inst label {
+    font-weight: 400;
+}
+
+
+/* ------------------------------------------- */
+
+
+/*                    Modals                   */
+
+
+/* ------------------------------------------- */
+
+body .jh-modal {
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+body .jh-content {
+    border-radius: 6px;
+    -webkit-box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.6);
+    padding: 20px;
+}
+
+
+
+body .popup-heading-text {
+    color: #0047BB;
+    font-size: 18px;
+    padding: 0;
+}
+
+
+body .jh-content hr {
+    display: none;
+}
+
+body .popup-subtitle {
+    background: none;
+    padding: 0;
+}
+
+body .popup-subtitle-text {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+
+body .iw_update_card_text {
+    margin-bottom: 15px;
+}
+
+.iw_delete_bank_success_text,
+.iw_delete_card_success_text,
+.iw_update_bank_success_text,
+.iw_update_card_success_text {
+    padding-bottom: 10px;
+}
+
+#walletForm label {
+    font-weight: 400;
+    color: var(--primary-text);
+}
+
+#walletForm .iw_update_card_label_card,
+#walletForm .iw_update_card_label_expdt {
+    font-weight: 700;
+}
+
+body .iw_delete_card_text_bold {
+    margin-bottom: 15px;
+}
+
+
+/* Manage Saved Payment Methods: Update Bank modal */
+
+label.iw_update_bank_text {
+    display: block;
+    margin: 0 0 15px;
+}
+
+span.desktop-only {
+    display: none;
+}
+
+span.desktop-display-inline {
+    display: inline;
+}
+
+label.iw_update_bank_default_pmt_method_text {
+    display: block;
+    clear: both;
+    margin: 0 0 15px;
+    width: 87%;
+}
+
+p.iw_update_bank_text {
+    margin: 0 0 15px;
+}
+
+@media (min-width: 484px) {
+    #walletForm a#Cancel {
+        margin: 0 15px 0 0;
+        padding: 6px 5px;
+        line-height: 30px;
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+
+label.iw_update_bank_text,
+label.iw_update_bank_label_accountno,
+label.iw_update_bank_label_routingno,
+label.iw_update_bank_label_accounttype {
+    margin-right: 25px;
+}
+
+label.iw_update_bank_default_pmt_method_text,
+span.checkbox-disable-icon {
+    display: inline-block;
+}
+
+span.checkbox-disable-icon {
+    vertical-align: top;
+}
+
+#walletForm .mobile-align-center {
+    clear: both;
+}
+
+
+/* Manage Saved Payment Methods: Update Card modal */
+
+form#walletForm select#expiryMonth {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background : transparent
+}
+
+form#walletForm select#expiryYear {
+    background : transparent
+}
+
+form#walletForm input#cardZipCode {
+    margin-top: 10px;
+background: transparent;}
+
+form#walletForm input#cardNumber {
+    width: 50%;
+    display: inherit;
+    background: transparent;
+}
+
+label.iw_update_card_default_pmt_method_text {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+
+/* Manage Saved Payment Methods: Update Card modal */
+
+p.iw_delete_bank_text_bold {
+    margin-bottom: 10px;
+}
+
+
+/* ------------------------------------------- */
+
+
+/*                     QBP                     */
+
+
+/* ------------------------------------------- */
+
+
+/* ------------------------------------------- */
+
+
+/*               PayBill and QBP               */
+
+
+/* ------------------------------------------- */
+
+#verifyInformation {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+/* Date picker */
+
+#PaymentDateDiv {
+    position: relative;
+}
+
+#PaymentDateDiv #DateOfPayment {
+    background: transparent;
+    float: none;
+}
+
+
+#PaymentDateDiv .mobile-only {
+    position: absolute;
+    top: 37px;
+    right: 10px;
+    z-index: -1;
+}
+
+#PaymentDateDiv .date-picker-icon {
+    margin: 0 !important;
+    position: static;
+}
+
+#PaymentAmountDiv {
+    float: none;
+    margin-top: 15px;
+}
+
+#PaymentInformation .desktop-display-inline {
+    float: none;
+}
+
+#MethodOfPaymentDiv select {
+    max-width: 100%;
+}
+
+#paymentForm label.mobile-font-style7 {
+    margin-bottom: 0;
+}
+
+#MethodOfPaymentDiv {
+    overflow: visible;
+}
+
+#TermsAndConDiv {
+    margin: 15px 0;
+}
+
+#TermsAndConDiv label {
+    vertical-align: middle;
+}
+
+.ver-info-desc-part1 {
+    margin: 15px auto;
+}
+
+.ver-info-desc-part1,
+.ver-info-desc-part2 {
+    font-size: 14px;
+}
+
+body .ver-info-desc-part2 {
+    margin-bottom: 15px;
+}
+
+body .ver-info-desc-part1 span,
+body .ver-info-desc-part2 span {
+    font-size: 14px;
+}
+
+
+/* SpeedPay convenience fee screen */
+
+#SpeedPayDiv .mobile-align-center {
+    width: 100%;
+    text-align: center;
+}
+
+#SpeedPayDiv .speedPayLogo {
+    width: 180px;
+}
+
+@media (min-width: 660px) {
+    #SpeedPayDiv p.desktop-only.desktop-font-style3.margin-left32perc,
+    #SpeedPayDiv a.link-no-decoration.desktop-only.margin-left39perc {
+        display: block;
+        margin-left: 0 !important;
+    }
+    #SpeedPayDiv .mobile-align-center .desktop-link-mobile-button {
+        margin-right: 15px;
+    }
+}
+
+
+/* Method of payment screen */
+
+#landingDiv aside:nth-of-type(odd) {
+    display: none;
+}
+
+#landingDiv aside:nth-of-type(even) {
+    width: 100%;
+}
+
+@media (max-width: 659px) {
+    #landingDiv {
+        padding: 0 10px;
+    }
+    #landingDiv aside {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #landingDiv header p {
+        font-size: 18px;
+        text-align: left;
+    }
+    #landingDiv .desktop-font-style33,
+    #landingDiv .col-head {
+        min-height: 0;
+    }
+    #landingDiv .desktop-font-style33 {
+        margin-bottom: 15px;
+    }
+    #landingDiv .col-head {
+        margin-bottom: 5px;
+    }
+    #SpeedPayDiv {
+        padding: 0 10px !important;
+    }
+    #SpeedPayDiv p.desktop-font-style3.mobile-font-style3 {
+        margin: 15px 0;
+    }
+    #SpeedPayDiv p.desktop-font-style3.mobile-font-style3 {
+        font-size: 14px;
+    }
+    #SpeedPayDiv p.mobile-font-style3 b,
+    #SpeedPayDiv .link-no-decoration.mobile-only {
+        display: block;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 660px) {
+    #SpeedPayDiv {
+        /* padding: 0 0 !important; */
+    }
+    #landingDiv {
+        padding: 0 20px;
+    }
+    #landingDiv aside:nth-of-type(even) {
+        width: 46%;
+    }
+    #landingDiv aside.two {
+        margin-right: 2%;
+    }
+    #landingDiv aside.four {
+        margin-left: 4%;
+    }
+    #landingDiv .head1 {
+        display: none;
+    }
+}
+
+
+/* Convenience fee content for payment info screen */
+
+.speedPayItalicFont.mobile-font-style3,
+#walletAmtWithFee a.link-underline {
+    font-size: 13px;
+}
+
+#NewBankAccount .saveCheckboxLebel,
+#TermsAndConDiv .saveCheckboxLebel,
+#saveCheckbox .saveCheckboxLebel {
+    font-size: 14px;
+}
+
+
+/* New credit card entry */
+
+@media (max-width: 656px) {
+    #CreditCardExpiryDateDiv select#expiryMonth,
+    #CreditCardExpiryDateDiv select#expiryYear {
+        width: 49%;
+        display: inline-block;
+        font-size: 20px;
+    }
+}
+
+#CreditCardExpiryDateDiv select#expiryMonth {
+    margin-right: 0.5%;
+}
+
+#CreditCardExpiryDateDiv select#expiryYear {
+    margin-left: 0.5%;
+}
+
+div#CreditCardExpiryDateDiv {
+    font-size: 0;
+}
+
+
+/* Verify info screen */
+
+table.ver-info-desc-part1.table-details {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#verifyInformation .mobile-align-center {
+    text-align: center;
+    width: 100%;
+}
+
+#chptype {
+    margin-top: -20px;
+    text-align: left;
+}
+
+
+/* ------------------------------------------- */
+
+
+/*                  Overrides                  */
+
+
+/* ------------------------------------------- */
+
+#paymentForm .margin-top20 {
+    margin-top: 0 !important;
+}
+
+@media (max-width: 655px) {
+    body br {
+        display: none !important;
+    }
+}
+
+p:empty {
+    /* display: none; */
+}
+
+p.norton-secured-icon {
+    display: inline-block;
+}
+
+#verifyInformation .mobile-only+br {
+    display: none;
+}
+
+body br+br {
+    /* display: none; */
+}
+
+label.mobile-font-style7 {
+    font-weight: 700;
+}
+
+
+/* ------------------------------------------- */
+
+
+/*           CONSMOBILE Overrides       	   */
+
+
+/* ------------------------------------------- */
+
+
+/*	Close button in Credit/Debit Card Delete  */
+
+a#Close.button-style {
+    margin: 25px;
+}
+
+
+/*	Step-2 Indicator in Payment Success  */
+
+#Verify-info-indicator.completed-step {
+    padding: 13px 0 13px 20px!important;
+}
+
+
+/*	Add new credit/debit card page  */
+
+div#CreditCardNumDiv.desktop-display-inline .desktop-font-style1.mobile-font-style3.desktop-display-inline {
+    float: none;
+}
+
+
+/* auto pay iframe consumes. */
+
+.desktop-font-style4,
+.mobile-font-style4,
+.desktop-font-style2,
+.mobile-font-style2,
+.link,
+.desktop-only,
+.mobile-only,
+.desktop-font-style3,
+.mobile-font-style3,
+select,
+option,
+a.button-style,
+input.button-style {
+    margin-bottom: 10px !important;
+    font-family: HelveticaNeue-light, Arial !important;
+    color : var(--primary-text);
+}
+
+
+/*Helvetica changes in pay bill page */
+
+.col-head,
+.desktop-font-style33,
+.landing-font-style3,
+.a.button-style1,
+.row3,
+.mobile-font-style7,
+.link-underline,
+.error-display-message,
+.ver-info-desc-part1,
+.ver-info-desc-part2,
+p,
+a,
+.button-style1,
+.button-style,
+.mobile-full-width {
+    font-family: HelveticaNeue-light, Arial !important;
+}
+
+
+/* autopay and pay bill iframe css changes */
+
+.question-mark-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("../images/ctl-consumer/tooltip-inverted.svg") 50% 50%/contain no-repeat;
+    vertical-align: middle;
+    margin-left: 2px;
+}
+
+.desktop-font-style4.mobile-font-style4,
+.desktop-font-style3.mobile-font-style3 {
+/*     margin-bottom: 20px !important; */
+    font-size: 13px !important;
+}
+
+label.desktop-font-style3.mobile-font-style3 {
+    /* margin-bottom: 10px !important; */
+}
+
+#RoutingNumDiv,
+#BankAcctNumDiv,
+#BankAcctTypeDiv {
+    margin-bottom: 10px !important;
+}
+
+#cancel,
+#cancelPayment,
+#Cancel {
+    width: 100% !important;
+    background: none !important;
+    color: #0047BB !important;
+    border: none !important;
+    -webkit-appearance: none !important;
+    -webkit-box-shadow: none !important;
+    margin-bottom: 5px;
+    font-weight: normal !important;
+    font-family: HelveticaNeue-medium !important;
+}
+
+.line-height18 {
+    line-height: 30px !important;
+}
+
+table.padding-left20 {
+    margin-bottom: 20px !important;
+}
+
+b {
+    font-weight: bold !important;
+    font-size: inherit !important;
+    font-family: HelveticaNeue-Thin !important;
+}
+
+p.col-head {
+    margin-bottom: 20px !important;
+    font-size: 20px !important;
+}
+
+a.button-style1.mobile-full-width1,
+button.button-style1,
+#reviewCrd,
+#processCrd,
+#reviewAch,
+.button-style.mobile-full-width,
+#submitPayment,
+a.button-style.mobile-half-width,
+.linkButtonDisabled.mobile-full-width,
+{
+    width: 100% !important;
+    /* background: #0047BB !important; */
+    -webkit-appearance: none;
+    color: #ffffff !important;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 3;
+    height: 55px !important;
+    border-radius: 0px !important;
+    font-family: HelveticaNeue-medium !important;
+}
+
+@media (min-width: 600px) {
+    div.head2 {
+        font-size: 33px !important;
+    }
+    p.col-head {
+        font-size: 25px !important;
+        min-height: 42px !important;
+        margin-bottom: 0px !important;
+    }
+    p.desktop-font-style33 {
+        font-size: 18px !important;
+        min-height: 0px !important;
+    }
+    a.button-style1.mobile-full-width1 {
+        font-size: 18px !important;
+        line-height: 2.5;
+        margin-bottom: 10px !important
+    }
+    label.desktop-font-style3.mobile-font-style3,
+    .desktop-font-style3,
+    .mobile-font-style3 {
+        font-size: 18px !important;
+    }
+    a.link-underline {
+        font-size: 15px !important;
+    }
+    .button-style.mobile-full-width {
+        width: 50% !important;
+        font-size: 18px !important;
+        line-height: 2.5 !important;
+    }
+    .ver-info-desc-part1 {
+        font-size: 18px !important;
+    }
+    .button-style.mobile-full-width {
+        width: 50% !important;
+    }
+    .mobile-align-left {
+        font-size: 18px !important;
+    }
+    .ver-info-desc-part2 {
+        font-size: 18px !important;
+    }
+    input#submitPayment.button-style {
+        font-size: 18px !important;
+        line-height: 2.5 !important;
+    }
+}
+
+@media (min-width: 500px) {
+    .button-style1.mobile-full-width1,
+    #reviewCrd,
+    #processCrd,
+    #reviewAch {
+        width: 100% !important;
+        margin: 0 auto !important;
+        display: block !important;
+        margin-top: 50px !important;
+    }
+    .head2 {
+        font-size: 33px !important;
+    }
+    p.col-head {
+        font-size: 25px !important;
+        margin-bottom: 0px !important;
+    }
+    .desktop-font-style33 {
+        font-size: 18px !important;
+        min-height: 0px !important;
+    }
+    .desktop-font-style3.mobile-font-style3,
+    .desktop-font-style4.mobile-font-style4,
+    .desktop-font-style4,
+    .mobile-font-style4,
+    .mobile-font-style3,
+    .desktop-font-style3 {
+        font-size: 18px !important;
+    }
+    #reviewAch,
+    .button-style.mobile-full-width,
+    .linkButtonDisabled.mobile-full-width,
+    .button-style mobile-half-width  {
+        width: 60% !important;
+        margin: 0 auto !important;
+        display: block !important;
+    }
+    a.link-underline {
+        font-size: 15px !important;
+    }
+    .mobile-full-width {
+        width: 70% !important;
+    }
+    .ver-info-desc-part1 {
+        font-size: 18px !important;
+    }
+    body .ver-info-desc-part1 span {
+        font-size: 18px !important;
+    }
+    input#submitPayment.button-style {
+        width: 50% !important;
+    }
+    body .desktop-link-mobile-button {
+        font-size: 15px !important;
+    }
+    a.button-style.mobile-half-width {
+        width: 60% !important;
+    }
+    span.verticalAlignMiddle.desktop-font-style3.mobile-font-style3 {
+        font-family: HelveticaNeue !important;
+    }
+    #RoutingNumDiv,
+    #BankAcctNumDiv {
+        width: 50% !important;
+        display: inline-block !important;
+    }
+    input#name {
+        width: 90% !important;
+    }
+    #cancel {
+        text-decoration: none !important;
+        text-align: center !important;
+        margin-top: 20px;
+    }
+    .ver-info-desc-part1,
+    .ver-info-desc-part2 {
+        font-size: 18px !important;
+    }
+    .mobile-align-left {
+        font-size: 18px !important;
+    }
+}
+
+div.desktop-display-inline {
+     margin-bottom: 15px !important;
+}
+
+div.mobile-align-center {
+    text-align: center;
+    margin-top: 20px !important;
+}
+
+#Add {
+    width: 60% !important;
+}
+
+label.mobile-font-style7 {
+    font-weight: normal !important;
+    font-family: HelveticaNeue-Thin !important;
+}
+
+a.link-underline {
+    text-decoration: none !important;
+}
+
+.mobile-align-left {
+    font-weight: bold;
+    font-size: 13px !important;
+}
+
+label.desktop-font-style3.mobile-font-style3 {
+    font-family: HelveticaNeue !important;
+}
+
+#PaymentAmount,
+#DateOfPayment,
+#MethodOfPayment {
+    font-family: HelveticaNeue-light !important;
+}
+
+
+/** font changes **/
+
+.head2 {
+    font-size: 24px !important;
+}
+
+.col-head {
+    font-size: 20px !important;
+}
+
+p {
+    font-size: inherit !important;
+}
+
+.desktop-font-style33 {
+    font-size: 13px !important;
+}
+
+label.mobile-font-style7 {
+    font-size: 18px !important;
+}
+
+label.desktop-font-style3.mobile-font-style3,
+.desktop-font-style3,
+.mobile-font-style3 {
+    font-size: 13px !important;
+}
+
+a.link-underline {
+    font-size: 13px !important;
+    font-family: HelveticaNeue !important;
+    color : #0047BB;
+}
+
+.ver-info-desc-part1 {
+    font-size: 13px !important;
+}
+
+.ver-info-desc-part2 {
+    font-size: 11px !important;
+}
+
+.link,
+input#name {
+    font-size: 13px !important;
+}
+
+
+/** Paybill - ENS - Credit Card alignment issue **/
+
+@media (min-width: 500px) {
+    #NewCreditCard>div:first-child {
+        width: 100%!important;
+        display: inline-block;
+    }
+    .ver-info-desc-part1 {
+        font-size: 16px !important;
+    }
+}
+
+
+/** auto pay font changes **/
+
+
+/**  Manage Wallet  font and css changes  **/
+
+@media (min-width: 500px) {
+    #walletForm .desktop-display-inline {
+        float: initial;
+    }
+    #walletForm #selectedInstrument {
+        margin-bottom: 30px;
+        height: 50px;
+        width: 50%;
+    }
+}
+
+#walletForm #selectedInstrument {
+    margin-bottom: 30px;
+    height: 50px;
+}
+
+#walletForm .choose-pmt-account-label,
+#walletForm .add-pmt-account-label,
+#walletForm .account-delete-details {
+    color: var(--primary-text);
+    font-size: 13px;
+}
+
+#walletForm .add-pmt-account-label,
+#walletForm .account-delete-details,
+#walletForm .account-update-sub-label {
+    margin-bottom: 10px;
+    margin-top: 2px !important;
+    color: var(--primary-text);
+}
+
+#walletForm .add-saved-pmt-acct-label {
+    color: var(--primary-text) !important;
+    margin-bottom: 10px;
+    font-size: 13px !important;
+}
+
+#walletForm .routing-num-label .accont-num-label .bank-account-type-label {
+    font-size: 13px !important;
+}
+
+#walletForm a.button-style.mobile-half-width {
+    font-size: 15px !important;
+}
+
+#walletForm,
+#Cancel body .desktop-link-mobile-button {
+    font-size: 15px !important;
+}
+
+@media (min-width: 500px) {
+    #walletForm a#Delete,
+    #walletForm a#Update {
+        width: 70% !important;
+        margin: 0 0 0 0;
+    }
+}
+
+#walletForm .card-num-label,
+#walletForm .exp-date-label,
+#walletForm .account-update-sub-label {
+    font-size: 13px;
+    font-family: HelveticaNeue-light !important;
+}
+
+@media (min-width: 500px) {
+    #walletForm .add-saved-pmt-acct-label,
+    #walletForm .account-update-sub-label,
+    #walletForm .card-num-label,
+    #walletForm .exp-date-label {
+        font-size: 18px !important;
+    }
+    #walletForm .account-update-sub-label a .link-underline {
+        font-size: 16px;
+    }
+}
+
+#walletForm select {
+    /* background-color: white !important; */
+}
+
+#walletForm .link-no-decoration {
+    display: block;
+    margin-top: 20px;
+}
+
+#walletForm .account-details-box {
+    width: 100%;
+    background-color: lightgray !important;
+}
+
+#walletForm p.account-added-label {
+    font-weight: bold !important;
+}
+
+#walletForm form>div:first-child .account-details-box {
+    font-weight: bold !important;
+}
+
+#walletForm .account-details-box b {
+    font-weight: bold !important;
+}
+
+@media (min-width: 500px) {
+    #walletForm input#routingNumber.padding-left8,
+    #walletForm input#accountNumber.padding-left8 {
+        margin-top: 5px;
+        width: 50%;
+    }
+    #walletForm select#bankAccountType {
+        display: inherit;
+        width: 50%;
+    }
+    #walletForm input#cardNumber.padding-left8 {
+        display: inherit;
+    }
+    #verifyInformation .displayBlock .button-style {
+        width: 50% !important
+    }
+}
+
+@media (min-width: 481px) and  (max-width:580px) {
+
+    #NewCreditCard .desktop-display-inline {
+
+        float: none !important;
+
+
+    }
+
+
+
+    #NewCreditCard .desktop-font-style1{
+
+        width: 98% !important;
+
+
+    }
+
+    #CreditCardExpiryDateDiv > div:nth-child(5){
+
+        display: flex !important;
+
+    }
+
+}
+
+@media (min-width: 500px) {
+    .desktop-font-style3.mobile-font-style3, .desktop-font-style4.mobile-font-style4, .desktop-font-style4, .mobile-font-style4, .mobile-font-style3, .desktop-font-style3 {
+        font-size: 13px !important;
+    }
+
+    .padding-from-top40{
+        padding-top: 45px!important;
+    }
+
+    a.link-underline {
+    font-size: inherit !important;
+}
+#VerifyInformationDiv > .desktop-block-only.desktop-font-style3{
+    display: inline-block  !important;
+}
+
+/*   Added to show Card Number */
+/* p:empty{
+    display: none !important;
+} */
+}
+@media (min-width: 700px) {
+    #VerifyInformationDiv > .desktop-block-only.desktop-font-style3{
+    display: block  !important;
+}
+}
+@media  (max-width: 580px){
+    #PaymentInformationDiv .staticContent{
+      display: inline-block !important;
+    }
+    #PaymentInformationDiv>lable+br+br {
+         display: flex !important;
+    }
+    #PaymentInformationDiv>label+br+br {
+        display: flex !important;
+    }
+    #PaymentInformationDiv>lable+br+br+br {
+         display: flex !important;
+    }
+    #CC_TermsAndConDiv label{
+        display: inline !important;
+    }
+    #submitCard {
+        /* display: flex !important; */
+    }
+    #card-payment-div .desktop-display-inline{
+        margin-bottom: 0px !important;
+    }
+    #NameOnCard {
+        margin-bottom: 15px !important;
+    }
+    #expiryYear {
+        margin-bottom: 15px !important;
+    }
+    #name {
+        margin-bottom: 15px !important;
+    }
+    #CreditCardExpiryDateDiv {
+        margin-bottom: 0px !important;
+    }
+    }
+
+    @media  (min-width: 580px){
+    #PaymentInformationDiv .staticContent{
+      display: inline-block !important;
+    }
+    #PaymentInformationDiv>lable+br+br {
+         display: flex !important;
+    }
+    #PaymentInformationDiv>label+br+br {
+        display: flex !important;
+    }
+    #PaymentInformationDiv>lable+br+br+br {
+        display: flex !important;
+   }
+    #PaymentInformationDiv div.desktop-display-inline {
+        display: initial !important;
+        width: 100%;
+   }
+    #cardNum{
+    width: 50%;
+  }
+}
+    @media  (min-width: 750px){
+    #PaymentInformationDiv div.desktop-display-inline {
+        display: flex !important;
+        width: 100% ;
+   }
+   #cardNum{
+    width: 50%;
+ }
+}
+p.norton-secured-icon {
+    display: inline-block !important;
+}
+.link-no-decoration,.colorGreen,.cancel-link {
+    color: #0047BB;
+}
+
+.link {
+   color: #0047BB;
+}
+
+#Payment-info-indicator, #Verify-info-indicator, #Review-conf-indicator {
+display: inline-block;
+height: 42px;
+text-align: center;
+vertical-align: top;
+width: 31%;
+padding: 13px 0 13px 20px;
+box-sizing: border-box;
+position: relative;
+margin-right:3.5%
+}
+
+#Payment-info-indicator.inprogress-step {
+background: #0047BB;
+z-index:3;
+color:white;
+}
+
+#Payment-info-indicator.inprogress-step:after {
+content: " ";
+position: absolute;
+right: -20px;
+top: 0;
+width: 0;
+height: 0;
+border-bottom: 21px solid transparent;
+border-left: 20px solid #0047BB;
+border-top:21px solid transparent;
+color:white;
+}
+
+#Payment-info-indicator.completed-step {
+background: #0047BB;
+z-index:3;
+color:white;
+}
+
+#Payment-info-indicator.completed-step:after {
+content: " ";
+position: absolute;
+right: -20px;
+top: 0;
+width: 0;
+height: 0;
+border-bottom: 21px solid transparent;
+border-left: 20px solid #0047BB;
+border-top:21px solid transparent;
+color:white;
+}
+
+#Verify-info-indicator.initiate-step {
+background: var(--disable-progress);;
+left: -10px;
+z-index:2
+}
+
+#Verify-info-indicator.initiate-step:before {
+content: " ";
+border-bottom: 21px solid transparent;
+border-left: 20px solid var(--color-bg);
+border-top: 21px solid transparent;
+height: 0;
+left: 0;
+position: absolute;
+top: 0;
+width:0
+}
+
+#Verify-info-indicator.initiate-step:after {
+border-bottom: 21px solid transparent;
+border-left: 20px solid var(--disable-progress);
+border-top: 21px solid transparent;
+content: " ";
+height: 0;
+position: absolute;
+right: -20px;
+top: 0;
+width:0
+}
+
+#Verify-info-indicator.inprogress-step {
+background: var(--primary-blue);
+left: -10px;
+z-index:2;
+color:white;
+}
+
+#Verify-info-indicator.inprogress-step:before {
+content: " ";
+border-bottom: 21px solid transparent;
+border-left: 20px solid var(--color-bg);
+border-top: 21px solid transparent;
+height: 0;
+left: 0;
+position: absolute;
+top: 0;
+width:0;
+color:white;
+}
+
+#Verify-info-indicator.inprogress-step:after {
+border-bottom: 21px solid transparent;
+border-left: 20px solid var(--primary-blue);
+border-top: 21px solid transparent;
+content: " ";
+height: 0;
+position: absolute;
+right: -20px;
+top: 0;
+width:0;
+color:white;
+}
+
+#Verify-info-indicator.completed-step {
+background: var(--primary-blue);
+left: -10px;
+z-index:2;
+color:white;
+}
+
+#Verify-info-indicator.completed-step:before {
+content: " ";
+border-bottom: 21px solid transparent;
+border-left: 20px solid var(--color-bg);
+border-top: 21px solid transparent;
+height: 0;
+left: 0;
+position: absolute;
+top: 0;
+width:0
+}
+
+#Verify-info-indicator.completed-step:after {
+border-bottom: 21px solid transparent;
+border-left: 20px solid #0047BB;
+border-top: 21px solid transparent;
+content: " ";
+height: 0;
+position: absolute;
+right: -20px;
+top: 0;
+width:0
+}
+
+#Review-conf-indicator.initiate-step {
+left: -20px;
+background: var(--disable-progress);margin-right: 0;
+z-index:1
+}
+
+#Review-conf-indicator.initiate-step:before {
+content: " ";
+border-bottom: 21px solid transparent;
+border-left: 20px solid var(--color-bg);
+border-top: 21px solid transparent;
+height: 0;
+left: 0;
+position: absolute;
+top: 0;
+width:0
+}
+
+#Review-conf-indicator.initiate-step:after {
+background: var(--disable-progress);
+content: " ";
+height: 42px;
+position: absolute;
+right: -20px;
+top: 0;
+width: 20px;
+z-index:-1
+}
+
+#Review-conf-indicator.inprogress-step {
+background: var(--primary-blue);
+left: -20px;
+margin-right: 0;
+z-index:1
+}
+
+#Review-conf-indicator.inprogress-step:before {
+content: " ";
+border-bottom: 21px solid transparent;
+border-left: 20px solid #fff;
+border-top: 21px solid transparent;
+height: 0;
+left: 0;
+position: absolute;
+top: 0;
+width:0
+}
+
+#Review-conf-indicator.inprogress-step:after {
+background: var(--primary-blue);
+content: " ";
+height: 42px;
+position: absolute;
+right: -20px;
+top: 0;
+width: 20px;
+z-index:-1
+}
+
+#Review-conf-indicator.completed-step,#Review-conf-indicator.completed-step1 {
+background: var(--primary-blue);
+left: -20px;
+margin-right: 0;
+z-index:1;
+color:white;
+}
+
+#Review-conf-indicator.completed-step:before {
+content: " ";
+border-bottom: 21px solid transparent;
+border-left: 20px solid #fff;
+border-top: 21px solid transparent;
+height: 0;
+left: 0;
+position: absolute;
+top: 0;
+width:0
+}
+
+#Review-conf-indicator.completed-step:after,#Review-conf-indicator.completed-step1:after {
+background: var(--primary-blue);
+content: " ";
+height: 42px;
+position: absolute;
+right: -20px;
+top: 0;
+width: 20px;
+z-index:-1
+}
+
+.icon-one-inprogress{
+    background : var(--image-path);
+/*     background: url('../images/ctl-consumer/mya_paybill_sprite.png'); */
+	background-position: -28px -151px;
+	width: 37px;
+	height: 37px;
+	display: block;
+	float:left;
+	margin-top:-11px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.icon-two-inprogress{
+    background : var(--image-path);
+/* 	background: url('../images/ctl-consumer/mya_paybill_sprite.png'); */
+	background-position: -82px -219px;
+	width: 34px;
+	height: 31px;
+	display: block;
+	float:left;
+	margin-top:-7px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.icon-three-initiate{
+    background : var(--image-path);
+/* 	background: url('../images/ctl-consumer/mya_paybill_sprite.png'); */
+	background-position: -130px -151px;
+	width: 35px;
+	height: 36px;
+	display: block;
+	float:left;
+	margin-top:-12px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.icon-one-completed,.icon-two-initiate,.icon-two-completed,.icon-three-inprogress, .icon-three-completed {
+    background : var(--image-path);
+/* background: transparent url('../images/ctl-consumer/mya_paybill_sprite.png'); */
+}
+.information-icon {
+    background : var(--image-path);
+/*     background: transparent url('../images/ctl-consumer/mya_paybill_sprite.png'); */
+    background-position: -796px -380px;
+}
+.date-picker-icon {
+    background : var(--image-path);
+    background: transparent url('../images/ctl-consumer/mya_paybill_sprite.png');
+    background-position: -752px -20px;
+}
+#CC_TermsAndConDiv a{
+    color: var(--primary-blue) !important;
+ }
+ .cardPaymentButton{
+    background-color: var(--primary-blue) !important;
+}
+.card-button-style.disabled {
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0.05,#99B6E4),color-stop(1,#99B6E4));
+    }
+
+.payment-button-style.disabled {
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #99B6E4), color-stop(1, #99B6E4));
+background: -moz-linear-gradient(center top, #99B6E4 5%, #99B6E4 100%);
+background: -ms-linear-gradient(top, #99B6E4, #99B6E4);
+background: -webkit-linear-gradient(top, #99B6E4, #99B6E4);
+background: -o-linear-gradient(top, #99B6E4, #99B6E4);
+-webkit-appearance: none;
+border-radius: 0!important;
+box-shadow: none!important;
+color: white;
+border: 0;
+padding: 7px 20px;
+text-decoration: none
+}
+
+.cancel-card-mobile-button,.cancel-card-button-text{
+        background-color: white !important;
+        color: var(--primary-blue);
+        text-decoration: underline;
+        margin-top: 0px;
+}
+
+.checkmark-icon {
+    display: inline-block;
+    background: transparent url('../images/ctl-consumer/mya_paybill_sprite.png');
+    background-position: -798px -424px;
+    width: 35px;
+    height:34px
+}
+
+.icon_one_inp {
+    background: transparent url('../images/ctl-consumer/mya_paybill_sprite.png');
+    background-position: -33px -217px;
+    width: 35px;
+    height: 36px;
+    display: block;
+    float: left;
+}
+
+.verify-info-init{
+    background: transparent url('../images/ctl-consumer/mya_paybill_sprite.png');
+    background-position: -87px -153px;
+    width: 35px;
+    height: 36px;
+    display: block;
+    float: left;
+}
+
+
+.confirmation-init{
+    background: transparent url('../images/ctl-consumer/mya_paybill_sprite.png');
+    background-position: -133px -153px;
+    width: 35px;
+    height: 36px;
+    display: block;
+    float: left;
+}
+
+span.mobile-only table.table-collapse{
+    background-color: #0047BB ! important
+}
+
+.icon-one-cmp {
+    background: transparent url('../images/ctl-consumer/mya_paybill_sprite.png');
+    background-position: -33px -212px;
+}
+
+.icon_two_inp {
+    background: transparent url('../images/ctl-consumer/mya_paybill_sprite.png');
+    background-position: -128px -217px;
+}
+.button-style.disabled,
+.button-style.disabled:hover {
+background: -webkit-linear-gradient(top, #99B6E4, #99B6E4);
+text-shadow: none;
+cursor: default;
+}
+
+a.button-style:hover,
+input.button-style:hover,
+a.button-style:focus,
+input.button-style:focus {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0047BB), color-stop(1, #0047BB));
+	background: -moz-linear-gradient(center top, #0047BB 5%, #0047BB 100%);
+	background: -ms-linear-gradient(top, #0047BB, #0047BB);
+	background: -webkit-linear-gradient(top, #0047BB, #0047BB);
+	background: -o-linear-gradient(top, #0047BB, #0047BB);
+	-pie-background: linear-gradient(#0047BB, #0047BB);
+	background-color: #0047BB;
+	color: #0047BB
+}
+
+a.button-style1, button.button-style1, .linkButtonDisabled,
+	input.button-style1 {
+		position: relative;
+		display: inline-block;
+		zoom: 1;
+		background-color: #0047BB;
+		background: -moz-linear-gradient(top, #0047BB 0,#0047BB 100%);
+		background: -webkit-gradient(left top, left bottom, color-stop(0%, #0047BB), color-stop(100%,#0047BB));
+		background: -webkit-linear-gradient(top, #0047BB 0,#0047BB 100%);
+		background: -o-linear-gradient(top, #0047BB 0, #0047BB 100%);
+		background: -ms-linear-gradient(top,#0047BB 0, #0047BB 100%);
+		background: linear-gradient(to bottom, #0047BB 0,#0047BB 100%);
+		-pie-background: linear-gradient(#0047BB, #0047BB);
+		border-radius: 3px;
+		border-bottom-left-radius: 3px;
+		border-top-left-radius: 3px;
+		border-top-right-radius: 3px;
+		border-bottom-right-radius: 3px;
+		-webkit-border-radius: 3px 3px 3px 3px;
+		-moz-border-radius: 3px 3px 3px 3px;
+		border: 0 solid #000;
+		text-indent: 0;
+		color: #fff;
+		font-family: Arial;
+		font-size: 14px;
+		font-weight: bold;
+		font-style: normal;
+		text-decoration: none;
+		text-align: center;
+		padding: 6px 15px;
+		-webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16);
+		-moz-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16);
+		box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16);
+		vertical-align: middle;
+		cursor: pointer;
+		z-index: 1;
+		behavior: url(/static/js/PIE.htc);
+		display: block
+
+}
+
+
+body .jh-close-text{
+ color: #0047BB;
+}
+
+
+body .jh-close {
+ color: #0047BB;
+}
+
+
+.dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_month_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell.dhtmlxcalendar_month_hdr {
+    width: 211px;
+    height: 25px;
+    line-height: 25px;
+    background-color: black;
+    color: white;
+}
+
+.dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_days_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell.dhtmlxcalendar_day_weekday_cell_first {
+    background-color: #0047BB;
+}
+
+.dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_days_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell.dhtmlxcalendar_cell{
+    background-color: #0047BB;
+    color:white
+}
+
+
+.dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell.dhtmlxcalendar_cell_month_date {
+    color: black;
+    background-color: #4BD597;
+    border-color: #4BD597;
+    border-top-color: #4BD597;
+    border-right-color: #4BD597;
+    border-bottom-color: #4BD597;
+    border-left-color: #4BD597;
+    cursor: pointer;
+}
+
+.dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell.dhtmlxcalendar_cell_month_date_weekend {
+    color: black;
+    background-color: #4BD597;
+    border-color: #4BD597;
+}
+
+.dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell.dhtmlxcalendar_cell_month {
+    color: black;
+    background-color: #CCCCCC;
+    border-color: #CCCCCC;
+    cursor: pointer;
+}
+
+
+.dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell.dhtmlxcalendar_cell_month_weekend {
+    background-color: #CCCCCC;
+    border-color: #CCCCCC;
+    cursor: pointer;
+}
+
+.dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_month_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell.dhtmlxcalendar_month_hdr span.dhtmlxcalendar_month_label_month, .dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_month_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell.dhtmlxcalendar_month_hdr span.dhtmlxcalendar_month_label_year {
+    position: relative;
+    font-weight: bold;
+    color: white;
+}
+
+.dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_month_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell.dhtmlxcalendar_month_hdr div.dhtmlxcalendar_month_arrow.dhtmlxcalendar_month_arrow_left {
+    left: 4px;
+        background-image: url('../images/ctl-consumer/dhxcalendar_arrow_left_white.gif');
+    opacity: .8;
+    filter: alpha(opacity=80);
+}
+
+.dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_month_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell.dhtmlxcalendar_month_hdr div.dhtmlxcalendar_month_arrow.dhtmlxcalendar_month_arrow_right {
+    right: 4px;
+        background-image: url('../images/ctl-consumer/dhxcalendar_arrow_right_white.gif');
+    opacity: .8;
+    filter: alpha(opacity=80);
+}
+
+.dhtmlxcalendar_dhx_skyblue div.dhtmlxcalendar_dates_cont ul.dhtmlxcalendar_line li.dhtmlxcalendar_cell.dhtmlxcalendar_cell_month {
+    color: black;
+    background-color: #CCCCCC;
+    border-color: #CCCCCC;
+    cursor: pointer;
+}
+
+
+p.desktop-font-style33,
+label.mobile-font-style7,
+label.mobile-font-style3,
+.desktop-font-style1,
+.desktop-font-style3,
+.mobile-font-style4,
+.ver-info-desc-part1,
+.ver-info-desc-part1 padding-top-div,
+.ver-info-desc-part1 table-details,
+.ver-info-desc-part2,
+.mobile-font-style3{
+    color: var(--header-txt-clr);}
+
+
+.PaymentInformationPart{
+	padding-left: 0px;
+}
+
+
+
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* For Portrait Mode - and Less Width. */
+@media ( max-width : 480px) {
+
+
+input[type="text"],input[type="date"],input[type="tel"],input[type="number"] {
+		width:96% !important;
+    background: transparent;
+	}
+
+    select {
+		width:100%;
+    background: transparent;
+	}
+
+}
+
+
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* For Landscape Mode - and Tablet/iPhone. */
+
+@media (min-width: 656px) {
+
+    #Menu-wrapper {
+        margin-bottom: 0;
+    }
+    body .button-style,
+    body .desktop-link-mobile-button {
+        font-size: 14px;
+        line-height: normal;
+    }
+    body .desktop-link-mobile-button {
+        background: none;
+        display: inline-block;
+        font-family: HelveticaNeue-light, Arial, sans-serif;
+        line-height: 28px;
+        vertical-align: top;
+    }
+
+    #paymentForm .error-display-box {
+        margin: 0 0 15px;
+    }
+    #paymentForm .error-display-box label {
+        font-size: 14px;
+    }
+    #paymentForm .error-display-box span {
+        font-size: 12px;
+    }
+
+    .desktop-display-inline{
+		float: none;
+	}
+
+     .ver-info-desc-part1.padding-top-div span.desktop-only {
+        display: inline-block;
+    }
+
+    #verifyInformation .mobile-align-center a.desktop-link-mobile-button {
+        margin-right: 15px;
+    }
+
+    body .ver-info-desc-part1 {
+        margin: 0;
+    }
+    .ver-info-desc-part1 {
+        font-size: 16px !important;
+    }
+
+     #PaymentInformation .desktop-display-inline {
+        float: none;
+    }
+
+    #PaymentAmountDiv,
+    #PaymentDateDiv,
+    #RoutingNumDiv,
+    #BankAcctNumDiv,
+    #CreditCardNumDiv,
+    #CreditCardExpiryDateDiv,
+    #CreditCardZipDiv {
+        display: inline-block;
+        padding-right: 5px;
+        width: 30%;
+    }
+
+    #MethodOfPaymentDiv {
+        width: 40%;
+    }
+
+     #PaymentAmountDiv {
+        margin-top: 0;
+    }
+
+    #PaymentDateDiv #DateOfPayment {
+        width: 155px;
+    }
+
+    #PaymentDateDiv .desktop-only {
+        position: absolute;
+        /* top: 32px; */
+        /* right: 10px; */
+        z-index: -1;
+    }
+
+    #PaymentDateDiv {
+        height: auto;
+    }
+
+    #paymentForm .PaymentInformationPart,
+    #verifyInformation {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #qbp-iframe-wrapper #paymentForm .PaymentInformationPart select,
+    #qbp-iframe-wrapper #paymentForm .PaymentInformationPart input[type="text"],
+    #qbp-iframe-wrapper #paymentForm .PaymentInformationPart input[type="tel"],
+    #qbp-iframe-wrapper #paymentForm .PaymentInformationPart input[type="date"] {
+        width: 90%;
+    }
+    p.desktop-font-style3.mobile-font-style3.saveCheckboxLebel a {
+        font-size: 14px;
+    }
+
+    body .popup-heading-text {
+        color: #333;
+        font-size: 20px;
+        font-weight: 700;
+        padding-left: 35px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    body .popup-heading {
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+        border: 1px solid #666;
+    }
+    body .jh-content {
+        -webkit-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.7);
+        -moz-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.7);
+        box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.7);
+        padding: 0;
+    }
+
+        body .popup-subtitle {
+        background: #faf9f8;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        padding: 0px 35px 35px 35px;
+    }
+    body .popup-subtitle-text {
+        font-size: 12px;
+    }
+
+    #Menu-wrapper .indicators-font-style.desktop-block-only {
+        display: block;
+    }
+    #Review-conf-indicator.completed-step1 {
+        white-space: nowrap;
+    }
+
+      #NewCreditCard .desktop-only p {
+        display: inline-block;
+    }
+    #NewCreditCard .desktop-only {
+        margin-bottom: 10px;
+    }
+
+    body .popup-container {
+        padding: 15px;
+    }
+     #Menu-wrapper .icon-one-inprogress,
+    #Menu-wrapper .icon-one-completed {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #Menu-wrapper .icon-one-inprogress {
+        background-position: -33px -151px;
+    }
+    #Menu-wrapper .icon-one-completed {
+        background-position: -31px -217px;
+    }
+    #Menu-wrapper .icon-three-initiate {
+        background-position: -130px -151px;
+    }
+     #Menu-wrapper .initiate-step,
+    #Menu-wrapper .inprogress-step,
+    #Menu-wrapper .completed-step {
+        padding: 13px 0 13px 20px;
+        width: 31%;
+        margin-right: 3.5%;
+    }
+    #Menu-wrapper .icon-one-inprogress,
+    #Menu-wrapper .icon-one-completed,
+    #Menu-wrapper .icon-two-initiate,
+    #Menu-wrapper .icon-two-inprogress,
+    #Menu-wrapper .icon-three-initiate {
+        display: block;
+        float: left;
+        margin-top: -11px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    #Menu-wrapper .icon-one-inprogress {
+        background-position: -32px -151px;
+        margin-right: 1px;
+        margin-left: 0;
+    }
+
+      #paymentForm label {
+        color: var(--primary-text);
+        font-size: 14px;
+        margin-bottom: 5px;
+        width: auto;
+        vertical-align: top;
+    }
+
+    #paymentForm .PaymentInformationPart select,
+    #paymentForm .PaymentInformationPart input[type="text"],
+    #paymentForm .PaymentInformationPart input[type="tel"],
+    #paymentForm .PaymentInformationPart input[type="date"] {
+        border-color: #aaa;
+        font-size: 14px;
+        height: 30px;
+        padding: 2px 0;
+        width: auto;
+    }
+}
+
+
+.error-detail-text{
+		font-family: arial;
+		font-weight: bold;
+		color: var(--primary-text);
+		font-size: 20px;
+		padding-top:5px;
+		padding-left:5px;
+	}
+.error-alternate-text{
+		font-family: arial;
+		color: var(--primary-text);
+		font-size: 14px;
+		padding-left:5px;
+	}
+
+
+
+  :root {
+      color-scheme: light dark;
+      }
+      @media (prefers-color-scheme: dark) {
+      :root {
+          color-scheme: light dark;
+          }
+      }
+
+
+  body { background-color: var(--color-bg);  /* color: var(--color-fg); */}
+
+  @media (prefers-color-scheme: light) {
+      :root {
+          --color-bg: #ffffff;
+          --color-fg: #000000;
+          --primary-text: #000000;
+          --primary-blue: #0047BB;
+          --disable-progress: #91B7E8;
+          --pre-paid-header-progress : #0047BB;
+          --image-path : url('../images/ctl-consumer/mya_paybill_sprite.png');
+      }
+  }
+
+  @media (prefers-color-scheme: dark) {
+      :root {
+          --color-bg: #172531;
+          --color-fg: #ffffff;
+          --primary-text: #FFFFFF;
+          --primary-blue: #0047BB;
+          --disable-progress: #91B7E8;
+          --pre-paid-header-progress : #FF000000;
+          --image-path : url('../images/ctl-consumer/mya_paybill_sprite.png');
+      }
+  }
+
+#CC_TermsAndConDiv {
+	margin-bottom: 10px;
+	}
+
+
+.verify-info-cmp{
+	background: url('../images/ctl-consumer/mya_paybill_sprite.png');
+	background-position: -86px -219px;
+	width: 35px;
+	height: 36px;
+	display: block;
+	float:left;
+}
+
+.icon_three_cmp{
+	background: url('../images/ctl-consumer/mya_paybill_sprite.png');
+	/* background-position: -4px -7px; */
+  background-position: -130px -151px;
+	width: 44px;
+	height: 35px;
+	display: block;
+	float:left;
+}
+
+input[type="text"],input[type="date"],input[type="tel"],input[type="number"] {
+    background: transparent;
+}
+select {
+    background: transparent;
+}
+
+
+/* div.desktop-only table.table-collapse{
+    background-color: var(--pre-paid-header-progress)! important
+} */
+
+#walletForm .choose-pmt-account-label{
+    margin-top: 10px !important;
+}
+
+.linkButtonDisabled{
+    background-color: rgb(145, 182, 232) !important;
+    text-shadow: none;
+    cursor: default;
+}
+.verticalAlignMiddle.desktop-font-style3.mobile-font-style3 {
+      margin-bottom: 20px !important;
+}
+
+.show-payment-inst {	margin-top:10px;	display: flex;}
+
+@media screen, print {
+    .paypalPaymentButton {
+        background: var(--primary-blue) none repeat scroll 0 0!important;
+        -webkit-appearance: none;
+        /* border-radius: 0 !important; */
+        box-shadow: none!important;
+        color: white;
+        border: none;
+        padding: 7px 20px;
+        text-decoration: none;
+    }
+}
+
+.TermsOfConvFeeDiv br{
+    display: block !important;
+}
+
+#card-payment-div table {
+    table-layout: fixed;
+}
+
+#card-payment-div table td div {
+    width:100%;
+}
+
+#card-payment-div label{
+    display: inline;
+    font-size: 13px;
+}
+
+#saveCheckbox label {
+    display: inline;
+}
+
+#changePayment {
+    display: block;
+}

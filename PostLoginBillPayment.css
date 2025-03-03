@@ -1,0 +1,1966 @@
+/* Styles for EPWF/HCDE iFrames */
+/* ------------------------------------------- */
+/*               Global/ cross flow            */
+/* ------------------------------------------- */
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+body {
+  font-family: MaisonNeue-Medium, sans-serif;
+  overflow: hidden;
+}
+
+body .loading-spinner-text {
+	color: black;
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+a.button-style1, 
+input.button-style1 {
+    background-color: #ffffff;
+	border: 1px solid #0047BB;
+	color: #0047BB;
+    background-image: none;
+    font-family: MaisonNeue-Bold, sans-serif;
+    height: 50px;
+    width: 200px;
+    line-height: 1;
+    align-self: flex-start;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+	align-self: flex-start;
+}
+
+
+/* Global font family */
+
+body {
+  font-family: MaisonNeue-Medium, sans-serif;
+}
+
+
+/* ------------------------------------------- */
+/*               Step indicators               */
+/* ------------------------------------------- */
+
+#Menu-wrapper {
+	margin-bottom: 15px;
+}
+
+.indicators-font-style {
+	font-family: MaisonNeue-Bold, sans-serif; 
+	font-size: 1.143rem
+}
+
+#Menu-wrapper .indicators-font-style {
+	font-size: 0.857rem;
+}
+
+#Menu-wrapper .indicators-font-style.desktop-block-only {
+	display: none;	
+}
+#Menu-wrapper #Verify-info-indicator .indicators-font-style.desktop-block-only {
+	color: #ffffff;	
+}
+
+#Menu-wrapper #Verify-info-indicator.initiate-step .indicators-font-style.desktop-block-only {
+	color: #000000;	
+	padding-left: 40px;
+}
+#Menu-wrapper #Verify-info-indicator .indicators-font-style.desktop-block-only {
+	color: #ffffff;	
+}
+
+#Menu-wrapper #Review-conf-indicator .indicators-font-style.desktop-block-only {
+	color: #000000;	
+	padding-left: 35px;
+}
+
+#Menu-wrapper .icon-one-inprogress,
+#Menu-wrapper .icon-one-completed,
+#Menu-wrapper .icon-two-initiate,
+#Menu-wrapper .icon-two-inprogress,
+#Menu-wrapper .icon-three-initiate {
+    display: inline-block;
+    float: none;
+    margin: 0 0 0 20px;
+}
+
+#Menu-wrapper .icon-one-inprogress {
+	background-position: -33px -151px; 
+	margin-left: -12px;
+	margin-right: -3px;
+	background: transparent url(https://eam.centurylink.com/static/images/epwf1CircMya.png) no-repeat;
+	margin-top: -6px;
+	background-size: 29px 29px;
+}
+
+#Menu-wrapper .icon-one-inprogress {
+	position: absolute;
+    top: 33%;
+}
+
+#Menu-wrapper .icon-one-completed {
+	background: transparent url(https://eam.centurylink.com/static/images/epwf1CircMyaChecked.png) no-repeat;
+	background-size: 29px 29px;
+	margin-left: -12px;
+	margin-right: -10px;  
+	margin-top: -7px;
+	position: absolute;
+    top: 33%;
+}
+
+#Menu-wrapper .icon-two-initiate {
+	background-position: -86px -151px;
+	margin-left: 4px;
+	margin-right: 0px;
+	background: transparent url(https://eam.centurylink.com/static/images/epwf2CirMya.png) no-repeat;
+    background-size: 29px 29px;
+    margin-top: -7px;
+	position: absolute;
+    top: 40%;
+	position: absolute;
+    top: 33%;
+	margin-left: 0%;
+}
+#Menu-wrapper .icon-two-inprogress {
+	height: 33px;
+	background: transparent url(https://eam.centurylink.com/static/images/epwf2CirMya.png) no-repeat;
+	margin-top: -5px;
+	position: absolute;
+    top: 33%;
+	margin-left: 0;
+}
+
+#Menu-wrapper .icon-three-initiate {
+	background: transparent url(https://eam.centurylink.com/static/images/epwf3CircMya.png) no-repeat;
+	margin-top: -7px;
+	margin-right: -1px;
+	background-size: 29px 29px;
+	position: absolute;
+    top: 33%;
+	margin-left: 0%;
+}
+
+#Menu-wrapper .initiate-step,
+#Menu-wrapper .inprogress-step,
+#Menu-wrapper .completed-step {
+	padding: 3px 0 0;
+	width: 30%;
+	margin-right: 5%;
+	font-size: 1rem;
+	margin-top: -2px;
+	font-weight: bold;
+}
+
+#Menu-wrapper .initiate-step {	
+	background: #cccccc;
+}
+
+#Menu-wrapper .initiate-step:last-child,
+#Menu-wrapper .inprogress-step:last-child {
+	margin-right: 0;
+}
+
+#Verify-info-indicator.initiate-step {
+	background: #cccccc;
+}
+
+#Review-conf-indicator.initiate-step {
+	background: #cccccc;
+}
+
+#Menu-wrapper #Review-conf-indicator.initiate-step:after {
+	background: #cccccc;
+}
+
+#Verify-info-indicator.inprogress-step {
+	background: #0047bb;
+	color: #ffffff;
+	position: relative;
+}
+
+#Verify-info-indicator.initiate-step, 
+#Review-conf-indicator.initiate-step {
+	color: #000000;
+	background: #cccccc;
+	position: relative;
+}
+#Review-conf-indicator.initiate-step {
+	padding-left: 39px;
+}
+#Review-conf-indicator.initiate-step:after {  
+	background: #cccccc;
+}
+
+#Verify-info-indicator.initiate-step:after {
+	border-left-color: #cccccc;
+}
+
+#Verify-info-indicator.inprogress-step:after {
+	border-left-color: #0047bb;
+}
+
+/* ------------------------------------------- */
+/*     progress steps for PayBill Cris         */
+/* ------------------------------------------- */
+
+#Payment-info-indicator.inprogress-step, 
+#Payment-info-indicator.completed-step {
+	background: #0047bb;
+	border-right: 1px solid #0047bb;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+
+#Payment-info-indicator.inprogress-step,
+#Payment-info-indicator.completed-step {
+	position: relative;
+}
+
+#Payment-info-indicator.inprogress-step:after, 
+#Payment-info-indicator.completed-step,
+#Payment-info-indicator.completed-step:after {
+	border-left-color: #0047bb;
+}
+
+/* ------------------------------------------- */
+/*     progress steps for QBP                  */
+/* ------------------------------------------- */
+
+.qbp-iframe-wrapper #Menu-wrapper .icon-two-initiate {
+	margin-top: 5px;
+}
+.qbp-iframe-wrapper #Menu-wrapper .icon-three-initiate {
+	margin-top: 4px;
+	margin-left:0px;
+}
+
+#qbp-iframe-wrapper #Menu-wrapper .icon-one-inprogress,
+#qbp-iframe-wrapper #Menu-wrapper .icon-two-initiate,
+#qbp-iframe-wrapper #Menu-wrapper .icon-three-initiate {
+	margin-top: 4px;
+}
+
+#qbp-iframe-wrapper #Menu-wrapper #Payment-info-indicator.completed-step:after {
+	border-left: 20px solid #0047bb;
+}
+
+#qbp-iframe-wrapper #Menu-wrapper .icon-one-completed {
+	margin-top: 2px;
+}
+
+/* ------------------------------------------- */
+/*              Error Messaging                */
+/* ------------------------------------------- */
+
+#paymentForm .error-display-box {
+	margin: 0 10px 15px;
+	padding: 12px;
+}
+
+#paymentForm .error-display-box label {
+	font-size: 0.857rem;
+	font-weight: 700;
+	color: #d0021b;
+}
+
+#paymentForm .error-display-box span {
+	font-size: 0.857rem;
+	color: #d0021b;
+}
+
+/* ------------------------------------------- */
+/*                   Buttons                   */
+/* ------------------------------------------- */
+
+body .button-style,
+body .desktop-link-mobile-button {
+	font-size: 1.143rem;
+	line-height: 1.71;
+	margin-bottom: 15px;
+	min-width: 80px;
+}
+
+body .desktop-link-mobile-button {
+	background: #ffffff;
+	border-radius: 0px;
+    box-shadow: none;
+}
+
+body .button-style {
+	background: none;
+	background-color: #ffffff;
+	border-radius: 0px;
+	border: 1px solid #0047BB;
+	color: #0047BB;
+	font-family: MaisonNeue-Medium, sans-serif;
+	font-size: 1rem;
+	height: 34px;
+	width: 227px;
+	padding: 0;
+	box-shadow: none;
+	margin: -0.25rem;
+}
+
+body .button-style#submitPayment, 
+body .button-style#ValidatePaymentInfo {
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+body .button-style:hover, 
+body .button-style1:hover {
+	background: none;
+	background-color: #ffffff;
+	border: 1px solid #0047BB;
+	color: #0047BB;
+}
+
+body .button-style:focus,
+body .desktop-link-mobile-button:focus {
+	background: none;
+	background-color: #ffffff;
+	border: 1px solid #0047BB;
+	color: #0047BB;
+}
+
+.button-style.disabled, 
+.button-style.disabled:hover {
+	cursor: default;
+	background: none;
+	background-color: white;
+	border-radius: 4px;
+	border: 1px solid #666666;
+	color: #666666;
+	font-family: MaisonNeue-Bold, sans-serif;
+	font-size: 1.143rem;
+	height: 50px;
+	width: 200px;
+	font-weight: bold;
+    border-color: #d2d2d2;
+    text-align: center;
+    line-height: 50px;
+	    box-shadow: none;
+}
+
+body .button-style1 {
+	background: none;
+    background-color: #ffffff;
+	border-radius: 4px;
+	border: 1px solid #0047BB;
+	color: #0047BB;
+	font-family: MaisonNeue-Medium, sans-serif;
+	font-size: 1.143rem;
+	height: 50px;
+	width: 200px;
+	padding-bottom: 2%;
+	padding-top: 5%;
+	margin: auto;
+}
+
+body .button-style1:hover {
+	background-color: #ffffff;
+}
+
+/* ------------------------------------------- */
+/*                    Forms                    */
+/* ------------------------------------------- */
+
+input[type=text], 
+input[type="tel"]{
+	font-size: 1.143rem;
+	font-family: MaisonNeue-Medium, sans-serif;
+	border: none;
+	outline-color: transparent;
+	outline-style: none;
+	-webkit-appearance: none;
+	transition: 250ms linear background;
+	background: #f8f8f8 !important;
+	height: 50px;
+	border-radius: 0px; 
+	border-bottom: 1px solid #000000;
+	box-shadow: none;
+}
+
+input[type=text]:focus, 
+input[type="tel"]:focus {
+	border-bottom: 1px solid #0047BB;
+}
+
+input:-internal-autofill-selected {
+	background: #f8f8f8 !important;
+}
+
+#paymentForm .PaymentInformationPart select,
+#paymentForm .PaymentInformationPart input[type="text"],
+#paymentForm .PaymentInformationPart input[type="tel"],
+#paymentForm .PaymentInformationPart input[type="date"] {
+	font-size: 1.143rem;
+    font-family: MaisonNeue-Medium, sans-serif;
+    border: none;
+    outline-color: transparent;
+    outline-style: none;
+    transition: 250ms linear background;
+    background: #f8f8f8;
+    height: 50px;
+    border-radius: 0px;
+	border-bottom: 1px solid black;
+    box-shadow: none;
+}
+
+#paymentForm .PaymentInformationPart select:focus,
+#paymentForm .PaymentInformationPart input[type="text"]:focus,
+#paymentForm .PaymentInformationPart input[type="tel"]:focus,
+#paymentForm .PaymentInformationPart input[type="date"]:focus {
+	border-bottom: 1px solid #0047BB;
+}
+
+input[type="tel"]{
+	width: 183px;
+}
+
+input[type="tel"]:focus{
+	border-bottom: 1px solid #0047BB;
+}
+
+
+/* ------------------------------------------- */
+/*              MISC LABELS and DIVS           */
+/* ------------------------------------------- */
+
+#ValidatePaymentInfoDiv {
+	text-align: left;
+}
+
+#paymentForm .default-check-label,
+#TermsAndConDiv label,
+#TermsAndConDiv a {
+	font-family: MaisonNeue, sans-serif;
+	display: inline;
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+#paymentForm .show-payment-inst label {
+	font-weight: 400;
+}
+
+
+body .popup-heading-text {
+	color: #0047bb;
+	font-size: 1rem;
+	padding: 0;
+	font-family: MaisonNeue, sans-serif;
+}
+
+body .popup-subtitle {
+	background: none;
+	padding: 0;
+}
+
+body .popup-subtitle-text {
+	font-family: MaisonNeue, sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+body .iw_update_card_text {
+	margin-bottom: 15px;
+}
+
+.iw_delete_bank_success_text, .iw_delete_card_success_text, .iw_update_bank_success_text, .iw_update_card_success_text {
+	padding-bottom: 10px;
+}
+
+#paymentForm .PaymentInformationPart,
+#verifyInformation {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.link-no-decoration {
+	color: #0047bb;
+	font-size: 1rem;
+	font-family: MaisonNeue, sans-serif;
+}
+.link{
+	color: #0047bb;
+	font-size: 1rem;
+	font-family: MaisonNeue, sans-serif;
+}
+
+.speedPayItalicFont.mobile-font-style3,
+#walletAmtWithFee a.link-underline {
+  font-size: 1rem;
+}
+
+#NewBankAccount .saveCheckboxLebel,
+#TermsAndConDiv .saveCheckboxLebel,
+#saveCheckbox .saveCheckboxLebel {
+	font-size: 1rem;
+}
+
+#CreditCardExpiryDateDiv select#expiryMonth {
+	border: none;
+    margin-right: 0.5%;
+    font-size: 1.143rem;
+    font-family: MaisonNeue-Medium, sans-serif;
+    border-bottom: 1px solid black; 
+	background: #f8f8f8 !important;
+	box-shadow: none;
+    border-radius: unset;
+    height: 50px;
+    margin-top: 17px;
+	width: 59% !important;
+}
+
+#CreditCardExpiryDateDiv select#expiryYear{
+	margin-left: 0.5%; 
+	border: none;
+    margin-right: 0.5%;
+    font-size: 1.143rem;
+    font-family: MaisonNeue-Medium, sans-serif;
+    border-bottom: 1px solid black; 
+	background: #f8f8f8 !important;
+	box-shadow: none;
+    border-radius: unset;
+    height: 50px;
+    margin-top: 0px;
+}
+
+div#CreditCardExpiryDateDiv {
+    font-size: 0;
+}
+
+
+
+
+#cancelLandingButtonId{
+	position: absolute;
+}
+
+#cardNum {
+	font-family: MaisonNeue-Medium, sans-serif;
+    border: none;
+    outline-color: transparent;
+    outline-style: none;
+    -webkit-appearance: none;
+    transition: 250ms linear background;
+    background: #f8f8f8 !important;
+    height: 50px;
+    border-radius: 0px;
+    border-bottom: 1px solid black;
+    box-shadow: none;
+	margin-top: -17px;
+	margin-top: 0px;
+}
+#cardNum:active,
+#cardNum:focus {
+	border-bottom-color: #0047BB;
+}
+#cardZip {
+	margin-top: 17px;
+	width: 80px;
+}
+
+.colorGrey {
+	color: #666666;
+}
+
+#CreditCardNumDiv .desktop-display-inline {
+  width: 100%;
+  margin-bottom: -6px;
+}
+
+.grayborder{
+	border: 0px solid lightgray !important;
+}
+
+h1 {
+	font-size: 2.286rem;
+}
+
+#MethodOfPaymentDiv select {
+	max-width: 100%;
+	-webkit-appearance: auto;
+}
+
+#MethodOfPaymentDiv {
+	overflow: visible;
+}
+
+.main-table-style{
+	width: 100% !important;
+}
+
+.mobile-font-style3 {
+	font-family: MaisonNeue, sans-serif;
+	font-size: 1rem;
+	line-height: 24px;
+	letter-spacing: 0px;
+	color: black;
+}
+
+#pmtArgs2OptionsDiv .mobile-font-style3-bold {
+	font-size: 1.429rem;
+}
+
+#pmtArgsFixedNoPmtsOptionDiv, #pmtArgsPastDueDiv, #pmtArgsPastDueDtpicker, .pmt-arg-row-date, .pmt-arg-row-1-1{
+    font-size: 1rem !important;
+}
+
+#NewBankAccount {
+	margin-top: 10px;
+}
+
+option {
+	font-family: MaisonNeue-Medium, sans-serif;
+	font-size: 1rem;
+	background-color: #ffffff;
+}
+option:hover {
+	background-color: #f2f6fd;
+}
+
+#PaymentAmountDiv {
+	float: none;
+	margin-top: 15px;
+}
+
+#pay-bill-cris-amount-due-label, 
+#payment-due-date-label, 
+#payment-due-date {
+	font-size: 1.143rem;
+}
+
+#pay-bill-cris-amount-due {
+	font-size: 3.429rem;
+}
+
+#pay-bill-cris-amount-due sup {
+	font-size: 1.714rem;
+}
+
+#PaymentForm label {
+	Font-size: 1.143rem;
+}
+
+#paymentForm label.mobile-font-style7 {
+	margin-bottom: 0;
+}
+#paymentForm {
+	padding-left: 10px;
+    padding-right: 10px;
+}
+
+#paymentForm .PaymentInformationPart{
+	padding-left: 0px;
+    padding-right: 0px;
+}
+
+#paymentForm label {
+	font-family: MaisonNeue-Medium, sans-serif;
+	font-size: 1.143rem;
+	color: #333333;
+}
+
+#PaymentInformation .desktop-display-inline {
+	float: none;
+}
+
+#pmtArgsPastDueDateSpan, #pmtArgsTotalDueDateSpan, .pmt-arg-row-date {
+	display: block;
+}
+
+.question-mark-icon {
+	background: transparent url(https://eam.centurylink.com/static/images/epwfQuestionBlueCircMya.png) no-repeat;
+	width: 20px;
+	height: 20px;
+	background-size: 20px 20px;
+}
+
+.select-option-new-account {
+	font-family: MaisonNeue-Medium, sans-serif;	
+	background: #ffffff;
+	font-size: 1rem;	
+}
+.select-option-new-account:hover {
+	background: #f2f6fd;
+}
+
+#TermsAndConDiv {
+	margin: 15px 0;
+}
+
+#TermsAndConDiv label {
+	vertical-align: middle;
+}
+
+
+/* ------------------------------------------- */
+/*              WALLET FORM                    */
+/* ------------------------------------------- */
+
+#walletForm label {
+	font-weight: 400;
+}
+
+#walletForm .iw_update_card_label_card,
+#walletForm .iw_update_card_label_expdt {
+    font-weight: 700;
+}
+
+body .iw_delete_card_text_bold {
+	margin-bottom: 15px;
+}
+
+label.iw_update_bank_text {
+    display: block;
+    margin: 0 0 15px;
+}
+
+span.desktop-only {
+    display: none;
+}
+
+span.desktop-display-inline {
+    display: inline;
+}
+
+label.iw_update_bank_default_pmt_method_text {
+    display: block;
+    clear: both;
+    margin: 0 0 15px;
+    width: 87%;
+}
+
+p.iw_update_bank_text {
+    margin: 0 0 15px;
+}
+
+label.iw_update_bank_text,
+label.iw_update_bank_label_accountno,
+label.iw_update_bank_label_routingno,
+label.iw_update_bank_label_accounttype {
+	margin-right: 25px;
+}
+
+label.iw_update_bank_default_pmt_method_text,
+span.checkbox-disable-icon {
+	display: inline-block;
+}
+
+span.checkbox-disable-icon {
+  vertical-align: top;
+}
+
+#walletForm .mobile-align-center {
+	clear: both;
+	margin-left:10px;
+}
+
+form#walletForm select#expiryMonth,
+form#walletForm select#expiryYear,
+form#walletForm select#bankAccountType,
+form#walletForm select#selectedInstrument {
+    margin-bottom: 10px;
+    margin-top: 10px;
+	font-size: 1.143rem;
+    font-family: MaisonNeue-Medium, sans-serif;
+    border: none;
+    outline-color: transparent;
+    outline-style: none;
+    transition: 250ms linear background;
+    background: #f8f8f8;
+    height: 50px;
+    border-radius: 0px;
+	border-bottom: 1px solid black;
+    box-shadow: none;
+}
+
+form#walletForm input#cardNumber{  
+    margin-top: 10px;
+}
+
+form#walletForm link{
+	font-family: MaisonNeue-Medium, sans-serif;
+	font-size: 1rem;
+}
+
+.account-details-box {
+	background-color: #f2f6fd;
+	border-color: #f2f6fd;
+	margin-bottom: 10px;
+	border-radius: none;
+}
+
+label.iw_update_card_default_pmt_method_text {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+p.iw_delete_bank_text_bold {
+	margin-bottom: 10px;
+}
+
+.checkmark-icon {
+	background: transparent url(https://eam.centurylink.com/static/images/epwfGreenCircCheckmark.png) no-repeat;
+}
+
+.account-added-label, 
+.account-update-label,
+.default-account-label, 
+.default-check-label, 
+.account-update-sub-label, 
+.account-delete-details {
+	font-size: 1rem;
+	font-family: MaisonNeue-Medium, sans-serif;
+	color: #000000;
+}
+
+.account-added-label, 
+.account-update-label {
+	font-weight: bold;
+}
+
+/* ------------------------------------------- */
+/*                    Modals                   */
+/* ------------------------------------------- */
+
+body .jh-modal {
+	border: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+body .jh-content {
+	border-radius: 6px;
+	-webkit-box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.6);
+	box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.6);
+	padding: 20px;
+}
+
+.jh-close-text {
+	font-family: MaisonNeue, sans-serif;
+	font-size: 1rem;
+	color: #0047bb;
+	display: none;
+}
+
+.jh-close {
+	font-family: MaisonNeue, sans-serif;
+	font-size: 2.286rem;
+	color: #0047bb;
+	border: none;
+	background-color: #ffffff;
+}
+
+body .jh-content hr {
+	display: none;
+}
+
+
+/* ------------------------------------------- */
+/*                    DATE PICKER              */
+/* ------------------------------------------- */
+
+#PaymentDateDiv {
+	position: relative;
+}
+
+#PaymentDateDiv #DateOfPayment {
+	background: transparent;
+	float: none;
+}
+
+#PaymentDateDiv .mobile-only {
+	position: absolute;
+	top: 32px;
+	right: 10px;
+	z-index: -1;
+}
+
+#PaymentDateDiv .date-picker-icon {
+	margin: 0 !important;
+	position: static;
+}
+
+.date-picker-icon {
+    background: transparent url(../images/mya_paybill_sprite.png);
+    background-position: -753px -20px;
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 26px;
+    margin-left: -24px;
+    position: absolute;
+    margin-top: 15px;
+}
+
+body .ver-info-desc-part1 {
+	margin: 15px auto;
+}
+
+body .ver-info-desc-part1,
+body .ver-info-desc-part2 {
+	font-size: 1rem;
+	font-family: MaisonNeue, sans-serif;
+}
+
+body .ver-info-desc-part2 {
+	margin-bottom: 15px;
+}
+
+body .ver-info-desc-part1 span,
+body .ver-info-desc-part2 span {
+	font-size: 1rem;
+}
+
+
+/* ------------------------------------------- */
+/*                  SPEEDPAY                   */
+/* ------------------------------------------- */
+
+#SpeedPayDiv .mobile-align-center {
+  width: 100%;
+  text-align: center;
+  border-radius: 0px;
+  font-family: MaisonNeue-Medium, sans-serif;
+  box-shadow: none;
+}
+
+#SpeedPayDiv .mobile-align-center .desktop-link-mobile-button#Cancel {
+	border-radius: 0px;
+	box-shadow: none;
+	margin-top: 5px;
+}
+
+#SpeedPayDiv .link-no-decoration.mobile-align-center.mobile-font-style3 {
+	color: #0047bb;
+}
+
+
+#SpeedPayDiv .speedPayLogo {
+	width: 180px;
+}
+.speedPayFont {
+	font-size:  0.857rem;
+}
+
+#SpeedPayDiv .mobile-align-center .desktop-link-mobile-button {
+	color: #0047bb;
+	margin-top: 0px;
+}
+
+#SpeedPayDiv .mobile-align-center .button-style.mobile-half-width {
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+body .desktop-link-mobile-button,
+#SpeedPayDiv .mobile-align-center #cancel, 
+#SpeedPayDiv .mobile-align-center #cancelPayment, 
+.link-underline {
+	color: #0047bb;
+	font-size: 1rem;
+	margin-top: 18px;
+	font-family: MaisonNeue-Medium, sans-serif;
+}
+
+#SpeedPayDiv .mobile-align-center .speedPayFont.colorGrey .mobile-align-center {
+	font-size:  0.857rem;
+}
+
+#SpeedPayDiv .speedPayFont.colorGrey .mobile-align-center {
+	font-size:  0.857rem;
+}
+
+
+/* ------------------------------------------- */
+/*            METHOD OF PAYMENT                */
+/* ------------------------------------------- */
+
+#landingDiv aside:nth-of-type(odd) {
+  display: none;
+}
+
+#landingDiv aside:nth-of-type(even) {
+    width: 100%;
+}
+
+#landingDiv header p {
+	font-family: MaisonNeue, sans-serif;		
+	font-size: 1.429rem;;
+	text-align: left;
+}
+
+#autoPayForm .desktop-font-style2 {
+	font-family: MaisonNeue, sans-serif;
+	font-size: 1rem;
+}
+
+.information-icon {
+	background: url(https://eam.centurylink.com/static/images/epwfBlueInfoCirc.png) no-repeat;
+	height: 50px;
+	width: 50px;
+}
+	
+#landingDiv .desktop-font-style33,
+#landingDiv .col-head {
+  min-height: 0;
+  font-size: 1.429rem;
+  font-family: MaisonNeue, sans-serif;
+}
+
+#landingDiv .desktop-font-style33 {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  font-family: MaisonNeue, sans-serif;
+}
+
+.landing-font-style3 {
+	font-family: MaisonNeue-Medium, sans-serif;
+	font-size: 0.857rem;
+	color: #666666;
+	padding-right: 20px;
+}
+
+
+
+/* ------------------------------------------- */
+/*            VERIFY SCREEN                    */
+/* ------------------------------------------- */
+
+table.ver-info-desc-part1.table-details {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#verifyInformation .mobile-align-center {
+	text-align: center;
+	width: 100%;
+}
+
+#chptype {
+	margin-top: 0px;
+}
+
+
+/*---------------------------------------------*/
+/*                Manage Wallet                */
+/*---------------------------------------------*/
+
+#walletForm .overflowHidden label {
+	margin-left: 0px;
+	font-size: 14px;
+}
+
+.choose-pmt-account-label, .add-pmt-account-label {
+	font-size: 1rem;
+	font-family: MaisonNeue, sans-serif;
+	color: #000000;
+}
+
+.account-details-box  {
+	font-family: MaisonNeue, sans-serif;
+   	font-size: 1rem;
+	background-color: #f2f6fd;
+    	border: 1px solid #f2f6fd;
+	border-radius: none;
+}
+
+
+/* ------------------------------------------- */
+/*                  Overrides                  */
+/* ------------------------------------------- */
+
+
+
+#PaymentInformation br {
+	display: none;
+}
+
+p.norton-secured-icon {
+	display: inline-block;
+}
+
+#verifyInformation .mobile-only + br {
+	display: none;
+}
+
+body br + br {
+	display: none;
+}
+
+label.mobile-font-style7 {
+  font-weight: 700;
+}
+
+.content-part {
+    padding: 0px;
+}
+
+#autoPayForm .mobile-align-center {
+	text-align: center;
+}
+#autoPayForm .mobile-align-center input {
+    margin: 0px 10px 0px 15px;
+	padding: 0px;
+	white-space: normal;
+}
+
+#autoPayForm .desktop-font-style4 {
+	font-size: 1.429rem;
+	font-family: MaisonNeue, sans-serif;
+}
+
+#autoPayForm .desktop-font-style3,
+#autoPayForm .desktop-font-style1 {
+	font-size: 1rem;
+	color: #666666;
+	font-family: MaisonNeue, sans-serif;
+}
+
+
+#autoPayForm select {
+	font-size: 1.143rem !important;
+    font-family: MaisonNeue-Medium, sans-serif;
+    border: none;
+    outline-color: transparent;
+    outline-style: none;
+    transition: 250ms linear background;
+    background: #f8f8f8;
+    height: 50px;
+    border-radius: 0px;
+	border-bottom: 1px solid black;
+    box-shadow: none;
+	width: 220px;
+	-webkit-appearance: auto;
+}
+
+#NewCreditCard br {
+	display: none;
+}
+#walletForm #cardZipCode{
+	margin-top: 10px;
+}
+
+#walletform .buttonstyle{
+	display: table-cell;
+}
+
+.add-saved-pmt-acct-label,
+.routing-num-label, 
+.accont-num-label, 
+.bank-account-type-label,
+.card-num-label, 
+.exp-date-label {
+	font-size: 1rem;	
+	font-family: MaisonNeue-Medium, sans-serif;
+	
+}
+
+
+/* ------------------------------------------- */
+/*              MEDIA (max-width: 765px)       */
+/* ------------------------------------------- */
+
+@media (max-width: 765px) {
+	form#walletForm input#cardZipCode {
+	   	width: 75px !important;
+	    margin-top: 10px; 
+	}
+}
+
+/* ------------------------------------------- */
+/*              MEDIA (min-width: 660px)       */
+/* ------------------------------------------- */
+
+@media (min-width: 660px) {
+
+	#SpeedPayDiv p.desktop-only.desktop-font-style3.margin-left32perc,
+	#SpeedPayDiv a.link-no-decoration.desktop-only.margin-left39perc {
+		display: block;
+		margin-left: 0 !important;
+	}
+
+	#SpeedPayDiv .mobile-align-center .desktop-link-mobile-button  {
+		margin-right: 3px;
+		margin-left: -15px;
+		color: #0047bb;
+		margin-top: 5.001px;
+	}
+
+	#SpeedPayDiv {
+	  padding: 0 20px !important;
+	}
+
+	
+
+	#landingDiv aside:nth-of-type(even) {
+	    width: 46%;
+	}
+
+	#landingDiv aside.two {
+	    margin-right: 4%;
+	}
+
+	#landingDiv aside.four {
+	    margin-left: 4%;
+	}
+
+	#landingDiv .head1 {
+		display: none;
+	}
+}
+
+
+/* ------------------------------------------- */
+/*              MEDIA (min-width: 656px)       */
+/* ------------------------------------------- */
+
+@media (min-width: 656px) {
+	#NewCreditCard .desktop-only p {
+	    display: inline-block;
+	}
+
+	#NewCreditCard .desktop-only {
+	    margin-bottom: 10px;
+		position: relative;
+	}
+	
+	#Menu-wrapper {
+		margin-bottom: 0;
+	}
+	
+	#Menu-wrapper .icon-one-inprogress,
+	#Menu-wrapper .icon-one-completed,
+	#Menu-wrapper .icon-two-initiate,
+	#Menu-wrapper .icon-two-inprogress,
+	#Menu-wrapper .icon-three-initiate {
+		display: block;
+		float: left;
+		margin-top: -11px;
+		margin-right: 5px;
+		margin-left: 5px;
+	}
+	
+	#Menu-wrapper .icon-one-inprogress {
+		background-position: -32px -151px;
+		margin-right: 1px;
+		margin-left: 0;
+	}
+	#Menu-wrapper .icon-two-inprogress {
+		margin-top: -7px;
+	}
+	
+	#Menu-wrapper .icon-two-initiate {
+		margin-top: -8px;
+	}
+	
+	#Menu-wrapper .icon-three-initiate {
+		background: transparent url(https://eam.centurylink.com/static/images/epwf3CircMya.png) no-repeat;
+		margin-top: -7px;
+		margin-right: -1px;
+		background-size: 29px 29px;
+	}
+	
+	#Menu-wrapper .initiate-step,
+	#Menu-wrapper .inprogress-step,
+	#Menu-wrapper .completed-step {
+		padding: 13px 0 13px 20px;
+		width: 31%;
+		margin-right: 3.5%;
+		font-size: 0.857rem;
+		margin-top: 0px;
+		font-weight: bold;
+		position: relative;
+	}
+	
+	#Menu-wrapper .indicators-font-style.desktop-block-only {
+		display: block;
+		font-size: 0.857rem;
+		margin-top: 0px;
+		font-weight: bold;
+		font-family: MaisonNeue-Medium, sans-serif;
+	}
+
+	#Menu-wrapper #Payment-info-indicator .indicators-font-style.desktop-block-only {
+		color: #ffffff;
+		padding-left: 22px;
+	}
+	#Menu-wrapper #Verify-info-indicator.inprogress-step .indicators-font-style.desktop-block-only {
+		color: #ffffff;
+		padding-left: 36px;
+	}
+	
+	#Menu-wrapper .icon-one-inprogress,
+	#Menu-wrapper .icon-one-completed {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	#Menu-wrapper .icon-one-inprogress {
+		background-position: -33px -151px; 
+		margin-left: -12px;
+		margin-right: -3px;
+		background: transparent url(https://eam.centurylink.com/static/images/epwf1CircMya.png) no-repeat;
+		background-size: 29px 29px;
+		position: absolute;
+		top: 36%;
+	}
+	#Menu-wrapper .icon-one-completed {
+		background: transparent url(https://eam.centurylink.com/static/images/epwf1CircMyaChecked.png) no-repeat;
+		background-size: 29px 29px;
+		margin-left: -12px;
+		margin-right: -10px; 
+		position: absolute;
+		top: 33%;
+	}
+	
+	#paymentForm .error-display-box {
+		margin: 0 0 15px;
+	}
+	
+	#paymentForm .error-display-box label {
+		font-size: 0.857rem;
+	}
+	
+	#paymentForm .error-display-box span {
+		font-size: 0.857rem;
+	}
+	
+	form#walletForm select#bankAccountType {
+		margin-top:4px;
+	}
+	
+	body .button-style,
+	body .desktop-link-mobile-button {
+		font-size: 1.143rem;
+		line-height: 1.71;
+		line-height: 24px;
+	}
+	
+	body #walletForm .button-style {
+		display: table-cell;
+	}
+	
+	body .button-style#submitPayment {
+		padding-top: 6px;
+		padding-bottom: 6px;
+	}
+	
+	body .button-style:hover,
+	body .desktop-link-mobile-button:hover {
+		border-style: solid;
+		background: #ffffff !important;
+		border: 1px solid #0047BB;
+		color: #0047BB;
+	}
+	
+	body .button-style:hover {
+		background-color: #ffffff;
+		border: 1px solid #0047BB;
+		color: #0047BB;
+	}
+	
+	body .desktop-link-mobile-button {
+		background: none;
+		display: inline-block;
+		font-family: MaisonNeue-Medium, sans-serif;
+		line-height: 0.71;
+		vertical-align: top;
+		margin-top: 0px;
+        margin-right: 6px;
+
+	}
+	
+	#walletForm .desktop-link-mobile-button {
+		float: left;
+		margin-right: 20px;
+	}
+	
+	.desktop-link-mobile-button {
+		position: relative;
+		display: inline-block;
+		zoom: 1;
+		background: #CCCCCC; /* Old browsers */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+		text-shadow:none;
+		border: 0 solid #000;
+		text-indent:0;
+		font-family: MaisonNeue-Medium, sans-serif;
+		font-size:1rem;
+		font-style:normal;
+		text-decoration:none;
+		text-align:center;
+		vertical-align: middle;
+		cursor: pointer;
+		z-index:1;
+		behavior: url(/static/js/PIE.htc);
+		min-width: 80px;
+	}
+	
+	#paymentForm .PaymentInformationPart select,
+	#paymentForm .PaymentInformationPart input[type="text"],
+	#paymentForm .PaymentInformationPart input[type="tel"],
+	#paymentForm .PaymentInformationPart input[type="date"] {
+		border-color: black;
+		font-size: 1.143rem;
+		height: 50px;
+		width: 95%;
+		padding: 2px 0;
+	}
+	
+	#paymentForm label {
+		color: #000;
+		font-size: 1.143rem;
+		margin-bottom: -5px;
+		width: 95%;
+		height: 50px;
+		vertical-align: top;
+	}
+	
+	body .popup-container {
+		padding: 15px;
+	}
+	
+	body .popup-heading-text {
+		color: #000000;
+		font-size: 1rem;
+		font-weight: 700;
+		padding-left: 35px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	body .popup-heading {
+		border-top-right-radius: 6px;
+		border-top-left-radius: 6px;
+		border: 1px solid #000000;
+	}
+	body .jh-content {
+		-webkit-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.7);
+		-moz-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.7);
+	    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.7);
+		padding: 0;
+	}
+	
+	body .popup-subtitle {
+		background: #faf9f8;
+		border-bottom-left-radius: 6px;
+		border-bottom-right-radius: 6px;
+		border-left: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+		padding: 0 35px 35px 35px;
+	}
+	body .popup-subtitle-text {
+		font-family: MaisonNeue, sans-serif;
+		font-size: 1rem;
+	}
+	
+	#qbp-iframe-wrapper #paymentForm .PaymentInformationPart select,
+	#qbp-iframe-wrapper #paymentForm .PaymentInformationPart input[type="text"],
+	#qbp-iframe-wrapper #paymentForm .PaymentInformationPart input[type="tel"],
+	#qbp-iframe-wrapper #paymentForm .PaymentInformationPart input[type="date"] {
+		width: 90%;
+	}
+
+	p.desktop-font-style3.mobile-font-style3.saveCheckboxLebel a {
+		font-size: 1.143rem;
+	}
+	
+	#paymentForm .PaymentInformationPart,
+	#verifyInformation {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	#PaymentDateDiv {
+		height: 120px;
+	}
+	
+	#PaymentDateDiv #DateOfPayment {
+		width: 185px;
+	}
+	
+	#PaymentDateDiv .desktop-only {
+		position: absolute;
+		top: 32px;
+		right: 10px;
+		z-index: -1;
+	}
+	
+	#PaymentAmountDiv {
+		margin-top: 0;
+	}
+	
+	#PaymentAmountDiv,
+	#PaymentDateDiv,
+	#RoutingNumDiv,
+	#BankAcctNumDiv,
+	#CreditCardNumDiv,
+	#CreditCardExpiryDateDiv,
+	#CreditCardZipDiv {
+		display: inline-block;
+		padding-right: 5px;
+		width: 30%;
+	}
+	#MethodOfPaymentDiv {
+		width: 271.791px;
+		margin-bottom: 31px;
+	}
+	
+	body .ver-info-desc-part1 {
+		margin: 0;
+	}
+	
+	#CreditCardExpiryDateDiv select#expiryMonth,
+	#CreditCardExpiryDateDiv select#expiryYear {
+	    width: 49%;
+	    display: inline-block;
+	    font-size: 1.143rem;
+	}
+	
+	#CreditCardExpiryDateDiv select#expiryMonth{
+		width: 59%;
+	}
+	#CreditCardExpiryDateDiv select#expiryYear {
+		width: 37%;
+	}
+	
+	.ver-info-desc-part1.padding-top-div span.desktop-only {
+		display: inline-block;
+	}
+
+	#verifyInformation .mobile-align-center a.desktop-link-mobile-button {
+		margin-right: 15px;
+	}
+	
+	body .button-style #ValidatePaymentInfo {
+		padding-bottom: 6px;
+		padding-top:6px;
+	}	
+}
+
+/* ------------------------------------------- */
+/*              MEDIA (max-width: 655px)       */
+/* ------------------------------------------- */
+
+@media (max-width: 655px) {
+	#PaymentDateDiv .desktop-only {
+		position: absolute;
+		top: 32px;
+		right: 10px;
+		z-index: -1;
+	}
+	#walletForm a#Cancel {
+		margin: 0 15px 0 0;
+		padding: 6px 5px;
+		line-height: 1.71;
+		display: inline-block;
+		vertical-align: top;
+		color: white;
+		width: 100px;
+		text-align: center;
+		background: #9C9C9C!important;
+		border-radius: 3px;
+		font-weight: bold;
+	}
+		
+	#walletForm p {
+		font-size: 14px;
+		font-family: MaisonNeue-Medium, sans-serif;
+		font-weight: normal;
+		color: black;
+		margin-left:10px;
+	}
+	#walletForm select {
+		font-size: 1.143rem;
+		font-family: MaisonNeue-Medium, sans-serif;
+		border: none;
+		outline-color: transparent;
+		outline-style: none;
+		transition: 250ms linear background;
+		background: #f8f8f8;
+		height: 50px;
+		border-radius: 0px;
+		border-bottom: 1px solid black;
+		box-shadow: none;
+	}
+	#walletForm input {
+		margin-left: 10px;
+		margin-bottom:10px;
+		border: 1px solid black;
+		border-radius: 3px;
+		box-sizing: border-box;
+		font-size: 1rem;
+		height: 35px;
+		padding: 1px 5px;
+	}
+	
+	#walletForm a {
+		margin-bottom: 0px;
+	 	margin-right: auto;
+		margin-left: 10px;
+		padding: 6px 15px;
+		height: auto;
+	}
+	#walletForm a.link-underline {
+		margin-bottom: 0px;
+	 	margin-right: auto;
+		margin-left: 0px;
+		padding: 0px 0px;
+	}
+	#walletForm label {
+		color: black;
+		font-size: 1rem;
+		font-weight: 700;
+		margin-left: 10px;
+	}
+	#walletform .buttonstyle{
+		display: table-cell;
+	}
+
+	#walletForm  p.choose-pmt-account-label {
+		color: black;
+		font-size: 1rem;
+		font-weight: 700;
+		margin-bottom: 3px;
+		margin-left: 10px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	#walletForm  p.add-pmt-account-label {
+		color: black;
+		font-size: 1rem;
+		font-weight: 700;
+		margin-bottom: 10px;
+		margin-top: 10px;
+		margin-left: 10px;
+		padding-left: 0px;
+		padding-right: 0px;
+		width:85%;
+	}
+	#walletForm  p.add-saved-pmt-acct-label {
+		color: black;
+		font-size: 1rem;
+		font-weight: 700;
+		margin-bottom: -1px !important;
+		margin-left: 10px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	#walletForm  .card-num-label {
+		margin-bottom: 10px;
+	}
+	#walletForm  label.exp-date-label {
+		margin-top: 10px;
+	}
+	#walletForm label.account-update-sub-label {
+		font-size: 14px;
+		line-height: 1.71;
+		font-family: MaisonNeue-Medium, sans-serif;
+		font-weight: bold;
+		color: black;
+	}
+	#walletForm a.mobile-half-width{
+		width:155px !important;
+		margin-left:0px !important;
+	}
+	#walletForm  p.account-delete-details {
+		margin-bottom: 10px;
+	}
+	#walletForm  p.account-added-label {
+		font-weight:bold;
+	}
+	#walletForm a.link-no-decoration{
+		display:block;
+		margin-left:10px;
+		padding:0px 0px;
+		margin-top:10px;
+	}
+	#walletForm a.button-style{
+		margin-right:20px;
+	}
+	#walletForm .account-details-box {
+		padding:0px 5px 5px 5px !important;
+		width: 95%;
+		margin: 0px 10px 10px 3px;
+		font-weight:bold;
+	} 
+	#walletForm button.jh-close-mobile {
+		background: url("../images/mobile-close-icon.png") no-repeat;
+	}
+	#walletForm .error-display-box {
+		padding: 10px 10px;
+	}
+	#walletForm .desktop-link-mobile-button{
+	
+		margin: 0px 10px 10px 15px !important;
+		
+	}
+	
+	#autoPayForm .mobile-align-center input {
+		font-size: 18px;
+		padding: 6px 10px 6px 10px !important;
+	}
+	#autoPayForm p {
+		font-size:14px;
+		margin:5px 0px 5px 0px;
+	}
+	#autoPayForm td {
+	vertical-align:top;
+}
+}
+
+
+/* ------------------------------------------- */
+/*              MEDIA (min-width: 481px)       */
+/* ------------------------------------------- */
+
+@media (min-width: 481px) {
+	
+	.jh-close-text {
+		font-family: MaisonNeue, sans-serif;
+		font-size: 1rem;
+	}
+	
+	.jh-close-text {
+		font-family: MaisonNeue, sans-serif;
+		font-size: 1.286rem;
+	}
+	
+	.desktop-font-style3 {
+		font-size: 1rem;
+		font-family: MaisonNeue, sans-serif;
+	}
+	
+	#autoPayForm .desktop-font-style4 {
+		font-size: 1.429rem;
+		font-family: MaisonNeue, sans-serif;
+	}
+
+	#autoPayForm .desktop-font-style3,
+	#autoPayForm .desktop-font-style1 {
+		font-size: 1rem;
+		color: #666666;
+		font-family: MaisonNeue, sans-serif;
+	}
+	#autoPayForm #cardZip.desktop-font-style1 {
+		margin-top: 0px;
+	}
+	#autoPayForm .error-display-message {
+		font-family: MaisonNeue, sans-serif;
+		font-size: 1rem;
+	}
+	
+}
+
+
+
+
+
+/* ------------------------------------------- */
+/*  MEDIA (min-width: 481px  AND max-width: 979 */
+/* ------------------------------------------- */
+
+
+@media screen and (min-width: 481px) and (max-width: 979px) {
+	#landingDiv .col-head {
+		min-height: 0;
+		font-size: 1.429rem;
+		font-family: MaisonNeue, sans-serif;
+	}
+	
+	.desktop-font-style33 {
+		margin-bottom: 15px;
+		font-size: 1rem;
+		font-family: MaisonNeue, sans-serif;
+	}
+	.landing-font-style3 {
+		font-family: MaisonNeue-Medium, sans-serif;
+		font-size: 0.857rem;
+		color: #666666;
+	}
+	
+	#landingDiv header p {
+		font-family: MaisonNeue, sans-serif;		
+		font-size: 1.429rem;
+		text-align: left;
+	}
+	
+}
+
+
+
+/* ------------------------------------------- */
+/*              MEDIA (max-width: 481px)       */
+/* ------------------------------------------- */
+
+@media (max-width: 481px) {
+	#autoPayForm p {
+		font-size:14px;
+	}
+	#autoPayForm .mobile-align-center {
+		margin-top:10px;
+	}
+	.mobile-font-style2 {
+		font-size:14px;
+	}
+	#autoPayForm .link {
+		font-size:14px;
+	}
+	#autoPayForm .mobile-align-center input {
+		margin-bottom:15px;
+	}
+}
+
+
+/* ------------------------------------------- */
+/*              MEDIA (max-width: 370px)       */
+/* ------------------------------------------- */
+
+@media (max-width: 370px){
+	#pmtArgsPastDueDtpicker, #pmtArgsTotalDueDtpicker,
+	#pmtArgsFixedNoPmtsOptionDtpicker1, #pmtArgsInstallmentsOptionDtTextBox1,
+	#pmtArgsFixedNoPmtsOptionDtpicker2, #pmtArgsInstallmentsOptionDtTextBox2{
+		margin-left: 0% !important;
+		width: 31% !important;
+		min-width: 90px !important;
+		font-size: 12px !important;
+		padding-left: 0px !important;
+	}
+}
+
+/* ------------------------------------------- */
+/*              MEDIA (min-width: 310px)       */
+/* ------------------------------------------- */
+
+@media (max-width: 310px){
+	#pmtArgsPastDueDtpicker, #pmtArgsTotalDueDtpicker,
+	#pmtArgsFixedNoPmtsOptionDtpicker1, #pmtArgsInstallmentsOptionDtTextBox1,
+	#pmtArgsFixedNoPmtsOptionDtpicker2, #pmtArgsInstallmentsOptionDtTextBox2{
+		margin-left: 0% !important;
+		width: 20% !important;
+		min-width: 80px !important;
+		font-size: 10px !important;
+		padding-left: 0px !important;
+	}
+}
+@media (max-width: 580px){
+	div#PaymentDateDiv{
+		margin : 20px 0px;
+	}
+	div#PaymentDateDiv input#DateOfPayment{
+		margin-top: 0px !important;
+		background: transparent !important;
+	}
+}
+div#PaymentDateDiv input#DateOfPayment{
+	background: transparent !important;
+}
+div#PaymentDateDiv div.desktop-only{
+	margin-top: 35px;
+}
+@media (min-width: 451px){
+	#dialogbox {
+		width: 50% !important;
+	}
+}
+
+@media screen and (max-width: 480px){
+	aside {
+		padding-left: 0px !important;
+	}
+}
+
+.tile-header {
+	display: none !important;
+}
+
+.btnStyle1{
+	background: none;
+	background-color: #ffffff;
+	border: 1px solid #0047BB;
+	color: #0047BB;
+    font-family: MaisonNeue-Medium, sans-serif;
+    font-size: 1.143rem;
+    height: 24px;
+    width: 200px;
+    padding-bottom: 4%;
+    padding-top: 5%;
+    margin: auto;
+}
+
+.width90px{
+	width: 140px !important;
+}
+
+.width60px{
+	width: 120px !important;
+}
+
+.width70px{
+	width: 140px !important;
+}
+
+.label-value-style2-bold{
+	font-size: 1em !important;
+}
+
+.margin-left250{
+	margin-left: -5px !important;
+}
+#paymentForm .cardPaymentButton {
+	position: absolute !important;
+}
+#paymentForm .card-button-style.disabled, #paymentForm .card-payment-button-text.payment-button-style.disabled {
+	padding: 6px 16px !important;
+	position: absolute !important;
+}
+html, body { overflow: hidden; }
+body .popup-heading {
+	background: #ffffff;	
+}
+.add-saved-pmt-acct-label {
+	color: #14161A;
+}
+#walletForm a#Cancel {
+    background: #ffffff !important;
+    color: #0047bb;
+	border: 1px solid #0047bb !important
+}
+#walletForm a#Cancel:hover {
+	background: rgba(0,71,187,0.039) !important;
+    border: 1px solid #0047BB;
+}
+#walletForm input#Update {
+	background: #ffffff;
+	color: #0047bb;
+	border: 1px solid #0047bb;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	height: auto;
+}
+#walletForm input#Update:hover {
+	background: rgba(0,71,187,0.039);
+    border: 1px solid #0047BB;
+}
+#SpeedPayDiv .mobile-align-center .button-style.mobile-half-width {
+	height: auto;
+}
+#walletForm input#cardZipCode {
+    border-radius: initial;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid black;
+}
